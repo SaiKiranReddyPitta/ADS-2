@@ -1,26 +1,5 @@
 Starting audit...
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\Bag.java:2: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\Bag.java:3:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\Bag.java:4:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\Bag.java:5: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\Bag.java:6:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\Bag.java:7:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\Bag.java:9:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\Bag.java:13:5: Class 'Bag' looks like designed for extension (can be subclassed), but the method 'isEmpty' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Bag' final or making the method 'isEmpty' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\Bag.java:13:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\Bag.java:16:5: Class 'Bag' looks like designed for extension (can be subclassed), but the method 'size' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Bag' final or making the method 'size' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\Bag.java:16:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\Bag.java:19:5: Class 'Bag' looks like designed for extension (can be subclassed), but the method 'add' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Bag' final or making the method 'add' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\Bag.java:19:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\Bag.java:26:5: Class 'Bag' looks like designed for extension (can be subclassed), but the method 'iterator' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Bag' final or making the method 'iterator' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\Bag.java:26:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\Bag.java:29: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\Bag.java:30:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\Bag.java:31:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\Bag.java:34:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\Bag.java:37:9: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 20 errors.
 Starting audit...
 [ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponent.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponent.java:1: Missing a Javadoc comment. [JavadocType]
