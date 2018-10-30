@@ -1,7 +1,29 @@
+/**.
+ * { Importing Scanner }
+ */
 import java.util.Scanner;
+/**.
+ * { item_description }
+ */
+
 public final class Solution {
+    /**.
+     * Constructs the object.
+     */
+
     private Solution() {
+        /**.
+         * { item_description }
+         */
     }
+
+    /**.
+     * { function_description }
+     *
+     * @param      args  The arguments
+     */
+    // time complexity for the main method is O(N).
+
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();

@@ -7,9 +7,4 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\Solution.java:2: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\Solution.java:3:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\Solution.java:5:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 4 errors.
