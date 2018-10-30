@@ -1,34 +1,9 @@
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponent.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphList.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphList.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphList.java:2:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphList.java:3:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphList.java:4:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphList.java:5:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphList.java:6:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphList.java:8: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphList.java:9:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphList.java:10:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphList.java:11:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphList.java:12:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphList.java:13:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphList.java:14:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphList.java:24:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphList.java:28:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphList.java:31:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphList.java:35:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphList.java:43:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphList.java:55:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphList.java:59:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphList.java:63:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 22 errors.
 Starting audit...
 [ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\Percolation.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\Percolation.java:1: Missing a Javadoc comment. [JavadocType]
