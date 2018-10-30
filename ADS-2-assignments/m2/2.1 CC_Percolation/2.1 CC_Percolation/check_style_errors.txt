@@ -2,23 +2,8 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponent.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponent.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponent.java:2:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponent.java:3:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponent.java:4:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponent.java:5:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponent.java:6:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponent.java:35:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponent.java:57:5: Class 'ConnectedComponent' looks like designed for extension (can be subclassed), but the method 'id' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ConnectedComponent' final or making the method 'id' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponent.java:57:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponent.java:60:5: Class 'ConnectedComponent' looks like designed for extension (can be subclassed), but the method 'size' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ConnectedComponent' final or making the method 'size' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponent.java:60:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponent.java:76:5: Class 'ConnectedComponent' looks like designed for extension (can be subclassed), but the method 'connected' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ConnectedComponent' final or making the method 'connected' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponent.java:76:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponent.java:80:5: Class 'ConnectedComponent' looks like designed for extension (can be subclassed), but the method 'areConnected' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ConnectedComponent' final or making the method 'areConnected' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\ConnectedComponent.java:80:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 16 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphList.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\GraphList.java:1: Missing a Javadoc comment. [JavadocType]
