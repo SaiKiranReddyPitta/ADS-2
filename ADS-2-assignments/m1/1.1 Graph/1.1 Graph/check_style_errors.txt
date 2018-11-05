@@ -24,24 +24,7 @@ Checkstyle ends with 20 errors.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m1\1.1 Graph\1.1 Graph\SeparateChainingHashST.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m1\1.1 Graph\1.1 Graph\SeparateChainingHashST.java:2:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m1\1.1 Graph\1.1 Graph\SeparateChainingHashST.java:3:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m1\1.1 Graph\1.1 Graph\SeparateChainingHashST.java:4:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m1\1.1 Graph\1.1 Graph\SeparateChainingHashST.java:5:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m1\1.1 Graph\1.1 Graph\SeparateChainingHashST.java:6:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m1\1.1 Graph\1.1 Graph\SeparateChainingHashST.java:9:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m1\1.1 Graph\1.1 Graph\SeparateChainingHashST.java:16:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m1\1.1 Graph\1.1 Graph\SeparateChainingHashST.java:28:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m1\1.1 Graph\1.1 Graph\SeparateChainingHashST.java:32:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m1\1.1 Graph\1.1 Graph\SeparateChainingHashST.java:35:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m1\1.1 Graph\1.1 Graph\SeparateChainingHashST.java:38:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m1\1.1 Graph\1.1 Graph\SeparateChainingHashST.java:45:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m1\1.1 Graph\1.1 Graph\SeparateChainingHashST.java:53:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m1\1.1 Graph\1.1 Graph\SeparateChainingHashST.java:73:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m1\1.1 Graph\1.1 Graph\SeparateChainingHashST.java:88:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 16 errors.
 Starting audit...
 [ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m1\1.1 Graph\1.1 Graph\SequentialSearchST.java:1: Missing a Javadoc comment. [JavadocType]
 [ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m1\1.1 Graph\1.1 Graph\SequentialSearchST.java:2:5: Missing a Javadoc comment. [JavadocVariable]
