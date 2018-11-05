@@ -22,29 +22,7 @@ Starting audit...
 Audit done.
 Checkstyle ends with 20 errors.
 Starting audit...
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m1\1.1 Graph\1.1 Graph\Queue.java:3: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m1\1.1 Graph\1.1 Graph\Queue.java:4:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m1\1.1 Graph\1.1 Graph\Queue.java:5:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m1\1.1 Graph\1.1 Graph\Queue.java:6:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m1\1.1 Graph\1.1 Graph\Queue.java:7: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m1\1.1 Graph\1.1 Graph\Queue.java:8:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m1\1.1 Graph\1.1 Graph\Queue.java:9:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m1\1.1 Graph\1.1 Graph\Queue.java:11:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m1\1.1 Graph\1.1 Graph\Queue.java:16:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m1\1.1 Graph\1.1 Graph\Queue.java:19:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m1\1.1 Graph\1.1 Graph\Queue.java:22:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m1\1.1 Graph\1.1 Graph\Queue.java:28:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m1\1.1 Graph\1.1 Graph\Queue.java:40:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m1\1.1 Graph\1.1 Graph\Queue.java:52:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m1\1.1 Graph\1.1 Graph\Queue.java:60:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m1\1.1 Graph\1.1 Graph\Queue.java:63: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m1\1.1 Graph\1.1 Graph\Queue.java:64:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m1\1.1 Graph\1.1 Graph\Queue.java:65:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m1\1.1 Graph\1.1 Graph\Queue.java:68:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m1\1.1 Graph\1.1 Graph\Queue.java:71:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m1\1.1 Graph\1.1 Graph\Queue.java:74:9: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 21 errors.
 Starting audit...
 [ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m1\1.1 Graph\1.1 Graph\SeparateChainingHashST.java:1: Missing a Javadoc comment. [JavadocType]
 [ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m1\1.1 Graph\1.1 Graph\SeparateChainingHashST.java:2:5: Missing a Javadoc comment. [JavadocVariable]
