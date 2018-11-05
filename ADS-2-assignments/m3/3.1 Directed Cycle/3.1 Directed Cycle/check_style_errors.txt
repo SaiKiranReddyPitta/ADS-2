@@ -1,30 +1,9 @@
 Starting audit...
 [ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Bag.java:18: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Bag.java:20: Line is longer than 80 characters (found 105). [LineLength]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Bag.java:23: Type Javadoc comment is missing @param <Item> tag. [JavadocType]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Bag.java:24:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Bag.java:24:17: Name 'N' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Bag.java:25:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Bag.java:28: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Bag.java:29:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Bag.java:30:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Bag.java:44: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Bag.java:51: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Bag.java:58:21: Parameter item should be final. [FinalParameters]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Bag.java:58:26: Expected @param tag for 'item'. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Bag.java:70: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Bag.java:75: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Bag.java:76:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Bag.java:78: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Bag.java:78:35: '{' at column 35 should have line break after. [LeftCurly]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Bag.java:79: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Bag.java:79:35: '{' at column 35 should have line break after. [LeftCurly]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Bag.java:81:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Bag.java:82: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 23 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
+[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Digraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Digraph.java:1:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
 [ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Digraph.java:3: Missing a Javadoc comment. [JavadocType]
 [ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Digraph.java:4:5: Missing a Javadoc comment. [JavadocVariable]
@@ -67,7 +46,6 @@ Starting audit...
 [ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Digraph.java:127:34: Parameter v should be final. [FinalParameters]
 [ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Digraph.java:140:26: Parameter v should be final. [FinalParameters]
 [ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Digraph.java:153:25: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Digraph.java:176: Line is longer than 80 characters (found 96). [LineLength]
 Audit done.
 Checkstyle ends with 43 errors.
 Starting audit...
@@ -91,19 +69,17 @@ Starting audit...
 Audit done.
 Checkstyle ends with 17 errors.
 Starting audit...
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Solution.java:2: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Solution.java:3:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Solution.java:6:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Solution.java:11:12: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Solution.java:11:18: '=' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Solution.java:11:19: '=' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Solution.java:11:21: ';' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Solution.java:11:22: '<' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Solution.java:11:23: '<' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Solution.java:11:28: ';' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Solution.java:19:9: '}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Solution.java:3: Missing a Javadoc comment. [JavadocType]
+[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Solution.java:5:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Solution.java:17:12: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Solution.java:17:18: '=' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Solution.java:17:19: '=' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Solution.java:17:21: ';' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Solution.java:17:22: '<' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Solution.java:17:23: '<' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Solution.java:17:28: ';' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Solution.java:25:9: '}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
 Audit done.
-Checkstyle ends with 12 errors.
+Checkstyle ends with 10 errors.
 Starting audit...
 Audit done.

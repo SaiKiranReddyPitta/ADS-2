@@ -1,8 +1,14 @@
 import java.util.Scanner;
+
 public final class Solution {
+
     private Solution() {
         //unused
     }
+    /**.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         int vertex = Integer.parseInt(sc.nextLine());
@@ -19,6 +25,8 @@ public final class Solution {
         }
         else {
             System.out.println("Cycle doesn't exists.");
+
         }
+
     }
 }
