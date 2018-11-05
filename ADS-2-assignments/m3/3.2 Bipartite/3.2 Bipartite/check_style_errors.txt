@@ -179,14 +179,13 @@ Starting audit...
 Audit done.
 Checkstyle ends with 42 errors.
 Starting audit...
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\3.2 Bipartite\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\3.2 Bipartite\Solution.java:2: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\3.2 Bipartite\Solution.java:2:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\3.2 Bipartite\Solution.java:2:21: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\3.2 Bipartite\Solution.java:3:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\3.2 Bipartite\Solution.java:3:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\3.2 Bipartite\Solution.java:3:33: Parameter args should be final. [FinalParameters]
+[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\3.2 Bipartite\Solution.java:5: First sentence should end with a period. [JavadocStyle]
+[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\3.2 Bipartite\Solution.java:8:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\3.2 Bipartite\Solution.java:8:21: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\3.2 Bipartite\Solution.java:9: First sentence should end with a period. [JavadocStyle]
+[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\3.2 Bipartite\Solution.java:9:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\3.2 Bipartite\Solution.java:14:33: Parameter args should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 6 errors.
 Starting audit...
 Audit done.

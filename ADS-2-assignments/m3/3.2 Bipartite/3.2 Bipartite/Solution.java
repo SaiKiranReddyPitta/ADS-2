@@ -1,5 +1,16 @@
+/**
+ * { item_description }
+ */
 import java.util.Scanner;
+/**
+ * { item_description }
+ */
 final class Solution{
+	/**
+	 * { function_description }
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int vertex = Integer.parseInt(sc.nextLine());
