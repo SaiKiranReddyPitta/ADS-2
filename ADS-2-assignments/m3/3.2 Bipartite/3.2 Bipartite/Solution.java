@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class Solution{
+final class Solution{
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int vertex = Integer.parseInt(sc.nextLine());
