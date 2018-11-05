@@ -1,29 +1,90 @@
 import java.util.Scanner;
+/**
+ * Interface for graph.
+ */
 interface Graph {
+    /**
+     * { function_description }.
+     * @return     { description_of_the_return_value }
+     */
     int getV();
+    /**
+     * { function_description }.
+     * @return     { description_of_the_return_value }
+     */
     int getE();
+    /**
+     * Adds an edge.
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     */
     void addEdge(int v, int w);
+    /**
+     * { function_description }.
+     * @param      v     { parameter_description }
+     * @return     { description_of_the_return_value }
+     */
     Iterable<Integer> adj(int v);
+    /**
+     * Determines if it has edge.
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     * @return     True if has edge, False otherwise.
+     */
     boolean hasEdge(int v, int w);
 }
+/**
+ * Class for matrix.
+ */
 class Matrix implements Graph {
+    /**
+     * vertices.
+     */
     private int vertices;
+    /**
+     * edges.
+     */
     private int edges;
+    /**
+     * matrix.
+     */
     private int[][] matrix;
+    /**
+     * Constructs the object.
+     * @param      v     { parameter_description }
+     * @param      e     { parameter_description }
+     */
     Matrix(final int v, final int e) {
         this.vertices = v;
         this.edges = 0;
         matrix = new int[v][v];
     }
+    /**
+     * vertices.
+     * @return     { description_of_the_return_value }
+     */
     public int getV() {
         return vertices;
     }
+    /**
+     * edges.
+     * @return     { description_of_the_return_value }
+     */
     public int getE() {
         return edges;
     }
+    /**
+     * Gets the matrix.
+     * @return     The matrix.
+     */
     public int[][] getMatrix() {
         return matrix;
     }
+    /**
+     * Adds an edge.
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     */
     public void addEdge(final int v, final int w) {
         if (v != w && !hasEdge(v, w)) {
             matrix[v][w] = 1;
@@ -31,31 +92,76 @@ class Matrix implements Graph {
             edges++;
         }
     }
+    /**
+     * { function_description }.
+     * @param      v     { parameter_description }
+     * @return    {description_of_the_return_value}
+     */
     public Iterable<Integer> adj(final int v) {
         return null;
     }
+    /**
+     * Determines if it has edge.
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     * @return     True if has edge, False otherwise.
+     */
     public boolean hasEdge(final int v, final int w) {
         return matrix[v][w] == 1;
     }
 }
+/**
+ * List
+ */
 class List implements Graph {
+    /**
+     * vertices.
+     */
     private int vertices;
+    /**
+     * edges.
+     */
     private int edges;
+    /**
+     * hash table.
+     */
     private SeparateChainingHashST<Integer, Bag> table;
+    /**
+     * Constructs the object.
+     * @param      v     { parameter_description }
+     * @param      e     { parameter_description }
+     */
     List(final int v, final int e) {
         this.vertices = v;
         this.edges = 0;
         table = new SeparateChainingHashST<>();
     }
+    /**
+     * V.
+     * @return     { description_of_the_return_value }
+     */
     public int getV() {
         return vertices;
     }
+    /**
+     * E.
+     * @return     { description_of_the_return_value }
+     */
     public int getE() {
         return edges;
     }
+    /**
+     * Gets the table.
+     * @return     The table.
+     */
     public SeparateChainingHashST<Integer, Bag> getTable() {
         return table;
     }
+    /**
+     * Adds an edge.
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     */
     public void addEdge(final int v, final int w) {
         edges++;
         if (v == w || hasEdge(v, w)) {
@@ -76,11 +182,22 @@ class List implements Graph {
             table.get(w).add(v);
             // System.out.println(table.get(v));
         }
-
     }
+    /**
+     * { function_description }.
+     * @param      v     { parameter_description }
+     * @return     { description_of_the_return_value }
+     */
     public Iterable<Integer> adj(final int v) {
         return table.keys();
     }
+    /**
+     * Determines if it has edge.
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     *
+     * @return     True if has edge, False otherwise.
+     */
     public boolean hasEdge(final int v, final int w) {
         if (!table.contains(v)) {
             return false;
@@ -94,10 +211,19 @@ class List implements Graph {
         return false;
     }
 }
+/**
+ * Class for solution.
+ */
 public final class Solution {
+    /**
+     * Constructs the object.
+     */
     private Solution() {
-
     }
+    /**
+     * main.
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         String adjacency = scan.nextLine();
@@ -118,6 +244,13 @@ public final class Solution {
                 System.out.println("No edges");
                 return;
             }
+            // for (Integer eachone : list.table) {
+            //  for (Integer each : eachone) {
+            //      System.out.print(elems[each] + " ");
+            //  }
+            //  System.out.println();
+            // }
+
             for (int ele = 0; ele < vertices; ele++) {
                 System.out.print(elems[ele] + ": ");
                 Bag<Integer> b = list.getTable().get(ele);
