@@ -181,11 +181,9 @@ Checkstyle ends with 42 errors.
 Starting audit...
 [ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\3.2 Bipartite\Solution.java:5: First sentence should end with a period. [JavadocStyle]
 [ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\3.2 Bipartite\Solution.java:8:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\3.2 Bipartite\Solution.java:8:21: '{' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\3.2 Bipartite\Solution.java:9: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\3.2 Bipartite\Solution.java:9:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\3.2 Bipartite\Solution.java:14:33: Parameter args should be final. [FinalParameters]
+[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\3.2 Bipartite\Solution.java:14:29: Parameter args should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 4 errors.
 Starting audit...
 Audit done.
