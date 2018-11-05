@@ -110,7 +110,7 @@ class Matrix implements Graph {
         return matrix[v][w] == 1;
     }
 }
-/**
+/**.
  * List
  */
 class List implements Graph {
