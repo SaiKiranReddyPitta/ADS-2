@@ -155,4 +155,49 @@ public class Digraph {
         return indegree[v];
     }
 
+    // /**
+    //  * Returns the reverse of the digraph.
+    //  *
+    //  * @return the reverse of the digraph
+    //  */
+    // public Digraph reverse() {
+    //     Digraph reverse = new Digraph(V);
+    //     for (int v = 0; v < V; v++) {
+    //         for (int w : adj(v)) {
+    //             reverse.addEdge(w, v);
+    //         }
+    //     }
+    //     return reverse;
+    // }
+
+    // /**
+    //  * Returns a string representation of the graph.
+    //  *
+    //  * @return the number of vertices <em>V</em>, followed by the number of edges <em>E</em>,
+    //  *         followed by the <em>V</em> adjacency lists
+    //  */
+    // public String toString() {
+    //     StringBuilder s = new StringBuilder();
+    //     s.append(V + " vertices, " + E + " edges " + NEWLINE);
+    //     for (int v = 0; v < V; v++) {
+    //         s.append(String.format("%d: ", v));
+    //         for (int w : adj[v]) {
+    //             s.append(String.format("%d ", w));
+    //         }
+    //         s.append(NEWLINE);
+    //     }
+    //     return s.toString();
+    // }
+
+    // /**
+    //  * Unit tests the {@code Digraph} data type.
+    //  *
+    //  * @param args the command-line arguments
+    //  */
+    // public static void main(String[] args) {
+    //     Scanner in = new Scanner(args[0]);
+    //     Digraph G = new Digraph(in);
+    //     System.out.println(G);
+    // }
+
 }
