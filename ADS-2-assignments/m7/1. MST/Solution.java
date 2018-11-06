@@ -6,14 +6,14 @@ import java.util.Scanner;
  * { item_description }
  */
 public final class Solution {
+    private Solution() {
+        //unused
+    }
     /**
      * . { item_description }
      *
      * @param      args  The arguments
      */
-    private Solution() {
-        //unused
-    }
     public static void main(final String[] args) {
         /**
          * { var_description }
