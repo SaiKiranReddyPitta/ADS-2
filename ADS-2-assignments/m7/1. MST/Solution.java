@@ -9,7 +9,7 @@ class Solution {
     /**
      * { item_description }
      */
-    public static void main(final String args[]) {
+    public static void main(final String[] args) {
         /**
          * { var_description }
          */
