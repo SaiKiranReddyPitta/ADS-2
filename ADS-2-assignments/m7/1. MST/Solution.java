@@ -1,7 +1,19 @@
+/**.
+ * { item_description }
+ */
 import java.util.Scanner;
+/**.
+ * { item_description }
+ */
 import java.util.Arrays;
+/**
+ * Class for solution.
+ */
 class Solution {
-	public static void main(String args[]) {
+	/**
+	 * { item_description }
+	 */
+	public static void main(final String args[]) {
 		Scanner in = new Scanner(System.in);
 		int vert = Integer.parseInt(in.nextLine());
 		int testcases = Integer.parseInt(in.nextLine());
