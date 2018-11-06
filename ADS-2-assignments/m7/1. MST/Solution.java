@@ -6,7 +6,7 @@ import java.util.Scanner;
  * { item_description }
  */
 class Solution {
-    /**
+    /**.
      * { item_description }
      */
     public static void main(final String[] args) {
