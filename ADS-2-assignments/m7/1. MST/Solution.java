@@ -6,10 +6,12 @@ import java.util.Scanner;
  * { item_description }
  */
 public class Solution {
-    /**.
-     * { item_description }
+    /**
+     * . { item_description }
+     *
+     * @param      args  The arguments
      */
-    public static void main(final String[] args) {
+    static void main(final String[] args) {
         /**
          * { var_description }
          */
