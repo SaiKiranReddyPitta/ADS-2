@@ -11,7 +11,7 @@ public class Solution {
      *
      * @param      args  The arguments
      */
-    static void main(final String[] args) {
+    public static void main(final String[] args) {
         /**
          * { var_description }
          */
