@@ -11,6 +11,9 @@ public final class Solution {
      *
      * @param      args  The arguments
      */
+    private Solution() {
+        //unused
+    }
     public static void main(final String[] args) {
         /**
          * { var_description }
