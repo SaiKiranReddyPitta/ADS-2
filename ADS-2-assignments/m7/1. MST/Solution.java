@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**.
  * { item_description }
  */
-class Solution {
+public class Solution {
     /**.
      * { item_description }
      */
