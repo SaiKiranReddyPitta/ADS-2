@@ -5,10 +5,6 @@ import java.util.Scanner;
 /**.
  * { item_description }
  */
-import java.util.Arrays;
-/**
- * Class for solution.
- */
 class Solution {
     /**
      * { item_description }
