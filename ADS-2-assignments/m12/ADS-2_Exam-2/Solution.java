@@ -2,13 +2,13 @@ import java.util.Scanner;
 /**
  * Class for solution.
  */
-class Solution {
-    /**
+public class Solution {
+    /**.
      * { function_description }
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
         // Self loops are not allowed...
 
@@ -26,13 +26,13 @@ class Solution {
 
         int k = edges;
 
-        while(k > 0) {
+        while (k > 0) {
 
             String[] edgeString = s.nextLine().split(" ");
 
-            Edge edge1 = new Edge(Integer.parseInt(edgeString[0]), 
-
-                Integer.parseInt(edgeString[1]), Integer.parseInt(edgeString[2]));
+            Edge edge1 = new Edge(Integer.parseInt(edgeString[0]),
+                Integer.parseInt(edgeString[1]),
+                Integer.parseInt(edgeString[2]));
 
             edgeWeightedGraph.addEdge(edge1);
 
@@ -70,7 +70,8 @@ class Solution {
 
             int dp = Integer.parseInt(directedPaths[1]);
 
-            DijkstraUndirectedSP sp = new DijkstraUndirectedSP(edgeWeightedGraph, ss);
+            DijkstraUndirectedSP sp =
+            new DijkstraUndirectedSP(edgeWeightedGraph, ss);
 
             if (sp.hasPathTo(dp)) {
 
@@ -97,7 +98,7 @@ class Solution {
             // If the path exists print the distance between them.
 
             // Other wise print "No Path Found."
-            
+
             System.out.println("No Path Found.");
 
             break;
