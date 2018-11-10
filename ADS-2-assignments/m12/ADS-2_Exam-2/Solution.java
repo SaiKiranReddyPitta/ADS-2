@@ -8,7 +8,7 @@ public class Solution {
      *
      * @param      args  The arguments
      */
-    public static void main(final String[] args) {
+    static void main(final String[] args) {
 
         // Self loops are not allowed...
 
@@ -112,3 +112,6 @@ public class Solution {
     }
 
 }
+
+
+ 
