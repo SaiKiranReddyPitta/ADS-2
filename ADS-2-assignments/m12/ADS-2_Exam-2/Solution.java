@@ -88,10 +88,13 @@ class Solution {
 
         case "ViaPaths":
 
-            // Handle the case of ViaPaths, where three integers are given.
+            // Handle the case of ViaPaths,
 
-            // First is the source and second is the via
-            // is the one where path should pass throuh.
+            // where three integers are given.
+
+            // First is the source and second
+
+            // is the via is the one where path should pass throuh.
 
             // third is the destination.
 
@@ -99,7 +102,119 @@ class Solution {
 
             // Other wise print "No Path Found."
 
-            System.out.println("No Path Found.");
+            String[] viaPaths = s.nextLine().split(" ");
+
+            ss = Integer.parseInt(viaPaths[0]);
+
+            int via = Integer.parseInt(viaPaths[1]);
+
+            dp = Integer.parseInt(viaPaths[viaPaths.length - 1]);
+
+                DijkstraUndirectedSP dsp
+
+                = new DijkstraUndirectedSP(edgeWeightedGraph, ss);
+
+            if (dsp.hasPathTo(dp)) {
+
+                Queue<Integer> que = new Queue<Integer>();
+
+                for (Edge e : dsp.pathTo(via)) {
+
+                    int ver = e.either();
+
+                    int other = e.other(ver);
+
+                    int v = 0;
+
+                    int w = 0;
+
+                    for (Integer j : que) {
+
+                        if (ver == j) {
+
+                            v = 1;
+
+                        }
+
+                        if (other == j) {
+
+                            w = 1;
+
+                        }
+
+                    }
+
+                    if (w == 0) {
+
+                        que.enqueue(other);
+
+                    }
+
+                    if (v == 0) {
+
+                        que.enqueue(ver);
+
+                    }
+
+                }
+
+                DijkstraUndirectedSP two
+
+                    = new DijkstraUndirectedSP(edgeWeightedGraph, via);
+
+                for (Edge e : two.pathTo(dp)) {
+
+                    int ver = e.either();
+
+                    int other = e.other(ver);
+
+                    int v = 0;
+
+                    int w = 0;
+
+                    for (Integer j : que) {
+
+                        if (ver == j) {
+
+                            v = 1;
+
+                        }
+
+                        if (other == j) {
+
+                            w = 1;
+
+                        }
+
+                    }
+
+                    if (v == 0) {
+
+                        que.enqueue(ver);
+
+                    }
+
+                    if (w == 0) {
+
+                        que.enqueue(other);
+
+                    }
+
+                }
+
+                System.out.println(dsp.distTo(via) + two.distTo(dp));
+
+                while (!que.isEmpty()) {
+
+                    System.out.print(que.dequeue() + " ");
+
+                }
+
+            } else {
+
+                System.out.println("No Path Found.");
+
+            }
 
             break;
 
