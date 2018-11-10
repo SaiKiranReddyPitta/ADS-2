@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 class Solution {
@@ -59,6 +58,23 @@ class Solution {
 
 			// Other wise print "No Path Found."
 
+			String[] directedPaths = s.nextLine().split(" ");
+
+			int ss = Integer.parseInt(directedPaths[0]);
+
+			int dp = Integer.parseInt(directedPaths[1]);
+
+			DijkstraUndirectedSP sp = new DijkstraUndirectedSP(edgeWeightedGraph, ss);
+
+			if (sp.hasPathTo(dp)) {
+
+				System.out.println(sp.distTo(dp));
+
+			} else {
+
+				System.out.println("No Path Found.");
+
+			}
 
 			break;
 
