@@ -145,9 +145,8 @@ Checkstyle ends with 141 errors.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m14\Assignment-1\Assignment-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m14\Assignment-1\Assignment-1\Solution.java:5:7: 'public' modifier out of order with the JLS suggestions. [ModifierOrder]
+[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m14\Assignment-1\Assignment-1\Solution.java:5: Class Solution should be declared as final. [FinalClass]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.

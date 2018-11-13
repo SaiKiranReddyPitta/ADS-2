@@ -2,7 +2,7 @@ import java.util.Scanner;
 /**.
  Solution class.
  */
-final public class Solution {
+public class Solution {
     /**.
      * default constructor.
      */
@@ -40,3 +40,6 @@ final public class Solution {
         return words;
     }
 }
+
+
+
