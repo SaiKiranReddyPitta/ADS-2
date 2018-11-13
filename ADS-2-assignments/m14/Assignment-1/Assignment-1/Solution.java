@@ -1,21 +1,21 @@
 import java.util.Scanner;
-/**.
- Solution class.
+/**
+ This is the Solution class.
  */
 final class Solution {
-    /**.
-     * default constructor.
+    /**
+     *This is the default constructor.
      */
     private Solution() {
       //unused.
     }
     /**
-     * main method.
+     *This is main method.
      * @param args String.
      */
     public static void main(final String[] args) {
         String[] words = loadWords();
-        //Your code goes here...
+        // Your code goes here...
         // System.out.println(Arrays.toString(words));
         TST tst = new TST();
         Scanner s = new Scanner(System.in);
@@ -29,10 +29,10 @@ final class Solution {
         }
         System.out.println(tst.keysWithPrefix(input));
     }
-    /**
-     * loadwords method.
-     * @return String array.
-     */
+/**
+ * loadwords method.
+ * @return String array.
+ */
     public static String[] loadWords() {
         In in = new In("/Files/dictionary-algs4.txt");
         String[] words = in.readAllStrings();
@@ -40,6 +40,3 @@ final class Solution {
         return words;
     }
 }
-
-
-
