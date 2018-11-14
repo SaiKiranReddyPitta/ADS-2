@@ -1,0 +1,22 @@
+Starting audit...
+[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m13\Radix Sorts\LSD.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m13\Radix Sorts\LSD.java:1: Missing a Javadoc comment. [JavadocType]
+[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m13\Radix Sorts\LSD.java:2:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m13\Radix Sorts\LSD.java:5:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m13\Radix Sorts\LSD.java:6:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m13\Radix Sorts\LSD.java:6:28: Variable 'check' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m13\Radix Sorts\LSD.java:14:29: Parameter a should be final. [FinalParameters]
+[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m13\Radix Sorts\LSD.java:14:41: Parameter w should be final. [FinalParameters]
+[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m13\Radix Sorts\LSD.java:17:13: Name 'R' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
+[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m13\Radix Sorts\LSD.java:17:17: '256' is a magic number. [MagicNumber]
+[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m13\Radix Sorts\LSD.java:20:23: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m13\Radix Sorts\LSD.java:20:24: '-' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m13\Radix Sorts\LSD.java:24:36: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m13\Radix Sorts\LSD.java:24:37: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m13\Radix Sorts\LSD.java:31:24: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m13\Radix Sorts\LSD.java:31:25: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m13\Radix Sorts\LSD.java:69: Line is longer than 80 characters (found 82). [LineLength]
+Audit done.
+Checkstyle ends with 17 errors.
+Starting audit...
+Audit done.
