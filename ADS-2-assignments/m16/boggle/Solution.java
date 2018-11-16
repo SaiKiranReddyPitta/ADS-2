@@ -31,7 +31,7 @@ final class Solution {
             }
             StdOut.println("Score = " + score);
             break;
-        case "dict-zingarelli2005.txt":
+        case "dictionary-zingarelli2005.txt":
             System.out.println("board is null");
             break;
         default:
