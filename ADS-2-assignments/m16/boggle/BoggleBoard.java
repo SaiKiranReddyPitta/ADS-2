@@ -110,13 +110,15 @@ public class BoggleBoard {
      * @param m the number of rows
      * @param n the number of columns
      */
-    public BoggleBoard(int m, int n) {
+    public BoggleBoard(final int m, final int n) {
         this.m = m;
         this.n = n;
-        if (m <= 0) { throw new IllegalArgumentException
-            ("number of rows must be a positive integer"); }
-        if (n <= 0) { throw new IllegalArgumentException
-            ("number of columns must be a positive integer"); }
+        if (m <= 0) {
+            throw new IllegalArgumentException("number of rows must be a positive integer");
+        }
+        if (n <= 0) {
+            throw new IllegalArgumentException("number of columns must be a positive integer");
+        }
         board = new char[m][n];
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
@@ -133,20 +135,25 @@ public class BoggleBoard {
      */
     public BoggleBoard(final char[][] a) {
         this.m = a.length;
-        if (m == 0) { throw new IllegalArgumentException
-            ("number of rows must be a positive integer"); }
+        if (m == 0) {
+            throw new IllegalArgumentException("number of rows must be a positive integer");
+        }
         this.n = a[0].length;
-        if (n == 0) { throw new IllegalArgumentException
-            ("number of columns must be a positive integer"); }
+        if (n == 0) 
+            {
+                throw new IllegalArgumentException("number of columns must be a positive integer");
+            }
         board = new char[m][n];
         for (int i = 0; i < m; i++) {
             if (a[i].length != n)
-                { throw new IllegalArgumentException
-                    ("char[][] array is ragged"); }
+                {
+                    throw new IllegalArgumentException("char[][] array is ragged");
+                }
             for (int j = 0; j < n; j++) {
                 if (ALPHABET.indexOf(a[i][j]) == -1)
-                    { throw new IllegalArgumentException
-                        ("invalid character: " + a[i][j]); }
+                    {
+                        throw new IllegalArgumentException("invalid character: " + a[i][j]);
+                    }
                 board[i][j] = a[i][j];
             }
         }
@@ -189,8 +196,12 @@ public class BoggleBoard {
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
                 sb.append(board[i][j]);
-                if (board[i][j] == 'Q') { sb.append("u "); }
-                else { sb.append("  "); }
+                if (board[i][j] == 'Q') {
+                    sb.append("u ");
+                }
+                else { 
+                    sb.append("  ");
+                }
             }
             sb.append("\n");
         }
@@ -213,7 +224,7 @@ public class BoggleBoard {
         // initialize a 4-by-4 board using
             //letter frequencies in English language
         StdOut.println("Random 4-by-4 board:");
-        BoggleBoard board2 = new BoggleBoard(2+2, 2+2);
+        BoggleBoard board2 = new BoggleBoard(2 + 2, 2 + 2);
         StdOut.println(board2);
         StdOut.println();
 
