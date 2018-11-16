@@ -7,6 +7,9 @@
  *
  ******************************************************************************/
 
+/**
+ * Class for boggle board.
+ */
 public class BoggleBoard {
     // the 16 Boggle dice (1992 version)
     private static final String[] BOGGLE_1992 = {
@@ -45,6 +48,9 @@ public class BoggleBoard {
 
     // letters and frequencies of letters in the English alphabet
     private static final String ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    /**
+     * { var_description }
+     */
     private static final double[] FREQUENCIES = {
         0.08167, 0.01492, 0.02782, 0.04253, 0.12703, 0.02228,
         0.02015, 0.06094, 0.06966, 0.00153, 0.00772, 0.04025,
@@ -53,21 +59,33 @@ public class BoggleBoard {
         0.01974, 0.00074
     };
 
+    /**
+     * { var_description }
+     */
     private final int m;        // number of rows
+    /**
+     * { var_description }
+     */
     private final int n;        // number of columns
+    /**
+     * { var_description }
+     */
     private char[][] board;     // the m-by-n array of characters
 
     /**
      * Initializes a random 4-by-4 board, by rolling the Hasbro dice.
      */
+    /**
+     * Constructs the object.
+     */
     public BoggleBoard() {
-        m = 4;
-        n = 4;
+        m = 2+2;
+        n = 2+2;
         StdRandom.shuffle(BOGGLE_1992);
         board = new char[m][n];
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
-                String letters = BOGGLE_1992[n*i+j];
+                String letters = BOGGLE_1992[n * i + j];
                 int r = StdRandom.uniform(letters.length());
                 board[i][j] = letters.charAt(r);
             }
@@ -82,9 +100,11 @@ public class BoggleBoard {
         In in = new In(filename);
         m = in.readInt();
         n = in.readInt();
-        if (m <= 0) { throw new IllegalArgumentException
+        if (m <= 0) {
+            throw new IllegalArgumentException
             ("number of rows must be a positive integer"); }
-        if (n <= 0) { throw new IllegalArgumentException
+        if (n <= 0) {
+            throw new IllegalArgumentException
             ("number of columns must be a positive integer"); }
         board = new char[m][n];
         for (int i = 0; i < m; i++) {
@@ -92,10 +112,10 @@ public class BoggleBoard {
                 String letter = in.readString().toUpperCase();
                 if (letter.equals("QU"))
                     { board[i][j] = 'Q'; }
-                else if (letter.length() != 1)
-                    { throw new IllegalArgumentException("invalid character: " + letter); }
-                else if (!ALPHABET.contains(letter))
-                    { throw new IllegalArgumentException("invalid character: " + letter); }
+                else if (letter.length() != 1) {
+                    throw new IllegalArgumentException("invalid character: " + letter); }
+                else if (!ALPHABET.contains(letter)) {
+                    throw new IllegalArgumentException("invalid character: " + letter); }
             else {
                     board[i][j] = letter.charAt(0);
             }
@@ -114,10 +134,12 @@ public class BoggleBoard {
         this.m = m;
         this.n = n;
         if (m <= 0) {
-            throw new IllegalArgumentException("number of rows must be a positive integer");
+            throw new IllegalArgumentException
+            ("number of rows must be a positive integer");
         }
         if (n <= 0) {
-            throw new IllegalArgumentException("number of columns must be a positive integer");
+            throw new IllegalArgumentException
+            ("number of columns must be a positive integer");
         }
         board = new char[m][n];
         for (int i = 0; i < m; i++) {
@@ -136,23 +158,24 @@ public class BoggleBoard {
     public BoggleBoard(final char[][] a) {
         this.m = a.length;
         if (m == 0) {
-            throw new IllegalArgumentException("number of rows must be a positive integer");
+            throw new IllegalArgumentException
+            ("number of rows must be a positive integer");
         }
         this.n = a[0].length;
-        if (n == 0) 
-            {
-                throw new IllegalArgumentException("number of columns must be a positive integer");
+        if (n == 0) {
+                throw new IllegalArgumentException
+                ("number of columns must be a positive integer");
             }
         board = new char[m][n];
         for (int i = 0; i < m; i++) {
-            if (a[i].length != n)
-                {
-                    throw new IllegalArgumentException("char[][] array is ragged");
+            if (a[i].length != n) {
+                    throw new IllegalArgumentException
+                        ("char[][] array is ragged");
                 }
             for (int j = 0; j < n; j++) {
-                if (ALPHABET.indexOf(a[i][j]) == -1)
-                    {
-                        throw new IllegalArgumentException("invalid character: " + a[i][j]);
+                if (ALPHABET.indexOf(a[i][j]) == -1) {
+                        throw new IllegalArgumentException("invalid character: "
+                            + a[i][j]);
                     }
                 board[i][j] = a[i][j];
             }
@@ -198,8 +221,7 @@ public class BoggleBoard {
                 sb.append(board[i][j]);
                 if (board[i][j] == 'Q') {
                     sb.append("u ");
-                }
-                else { 
+                } else {
                     sb.append("  ");
                 }
             }
