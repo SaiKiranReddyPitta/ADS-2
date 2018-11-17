@@ -101,10 +101,11 @@ public class Solution {
 		String[] tokens = toReadFile(file);
 		int length = tokens.length;
 		for(int i = 0; i < length; i++){
-			if(! st.contains(tokens[i])) {
+			String s = tokens[i].toLowerCase();
+			if(! st.contains(s)) {
 				st.put(tokens[i], j);
 			}else{
-				st.put(tokens[i], st.get(tokens[i])+1);
+				st.put(s, st.get(s)+1);
 			}
 		}
 		return st;
