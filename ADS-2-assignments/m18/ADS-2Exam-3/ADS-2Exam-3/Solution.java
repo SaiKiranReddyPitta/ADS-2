@@ -1,9 +1,16 @@
 import java.util.Scanner;
 import java.util.TreeSet;
 
+/**
+ * Class for solution.
+ */
 public class Solution {
 
-	// Don't modify this method.
+	/**
+	 * Don't modify this method.
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		String cases = scan.nextLine();
@@ -79,12 +86,25 @@ public class Solution {
 		}
 	}
 
-	// Don't modify this method.
+	/**
+	 * Don't modify this method.
+	 *
+	 * @param      file  The file
+	 *
+ 	 * @return     { description_of_the_return_value }
+	 */
 	public static String[] toReadFile(String file) {
 		In in = new In(file);
 		return in.readAllStrings();
 	}
 
+	/**
+	 * Loads a dictionary.
+	 *
+	 * @param      file  The file
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public static BinarySearchST<String, Integer> loadDictionary(String file) {
 		BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
 		// your code goes here
@@ -124,12 +144,25 @@ class T9 {
 
 	}
 
-	// get all the prefixes that match with given prefix.
+	/**
+	 * get all the prefixes that match with given prefix.
+	 *
+	 * @param      prefix  The prefix
+	 *
+	 * @return     All ws.
+	 */
 	public Iterable<String> getAllWs(String prefix) {
 		// your code goes here
 		return tst.keysWithPrefix(prefix);
 	}
 
+	/**
+	 * { function_description }
+	 *
+	 * @param      t9Signature  The t 9 signature
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public Iterable<String> potentialWords(String t9Signature) {
 		// your code goes here
 		//TreeSet<String> ts = new TreeSet<>();
@@ -172,7 +205,14 @@ class T9 {
 		return ts;
 	}
 
-	// return all possibilities(ws), find top k with highest frequency.
+	/**
+	 * return all possibilities(ws), find top k with highest frequency.
+	 *
+	 * @param      words  The words
+	 * @param      k      { parameter_description }
+	 *
+	 * @return     The suggestions.
+	 */
 	public Iterable<String> getSuggestions(Iterable<String> words, int k) {
 		// your code goes here
 		// Hashmap<Integer, String> hash = new Hashmap();
@@ -193,8 +233,14 @@ class T9 {
 		return ts;
 	}
 
-	// final output
-	// Don't modify this method.
+	/**
+	 * final output Don't modify this method.
+	 *
+	 * @param      t9Signature  The t 9 signature
+	 * @param      k            { parameter_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public Iterable<String> t9(String t9Signature, int k) {
 
 		return getSuggestions(potentialWords(t9Signature), k);
