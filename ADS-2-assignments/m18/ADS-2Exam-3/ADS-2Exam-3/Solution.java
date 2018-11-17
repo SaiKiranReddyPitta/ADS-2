@@ -29,13 +29,13 @@ public class Solution {
 			}
 			break;
 
-		case "potentialWs":
+		case "potentialWords":
 			// input002.txt and output002.txt
 			t9 = new T9(loadDictionary("/Files/t9.csv"));
 			int count = 0;
 			while (scan.hasNextLine()) {
 				String t9Signature = scan.nextLine();
-				for (String each : t9.potentialWs(t9Signature)) {
+				for (String each : t9.potentialWords(t9Signature)) {
 					count++;
 					System.out.println(each);
 				}
@@ -130,7 +130,7 @@ class T9 {
 		return tst.keysWithPrefix(prefix);
 	}
 
-	public Iterable<String> potentialWs(String t9Signature) {
+	public Iterable<String> potentialWords(String t9Signature) {
 		// your code goes here
 		//TreeSet<String> ts = new TreeSet<>();
 		TreeSet<String> ts = new TreeSet<>();
@@ -197,6 +197,6 @@ class T9 {
 	// Don't modify this method.
 	public Iterable<String> t9(String t9Signature, int k) {
 
-		return getSuggestions(potentialWs(t9Signature), k);
+		return getSuggestions(potentialWords(t9Signature), k);
 	}
 }
