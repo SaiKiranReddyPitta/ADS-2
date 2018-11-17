@@ -23,25 +23,25 @@ public class Solution {
 			T9 t9 = new T9(loadDictionary("/Files/t9.csv"));
 			while (scan.hasNextLine()) {
 				String prefix = scan.nextLine();
-				for (String each : t9.getAllWords(prefix)) {
+				for (String each : t9.getAllWs(prefix)) {
 					System.out.println(each);
 				}
 			}
 			break;
 
-		case "potentialWords":
+		case "potentialWs":
 			// input002.txt and output002.txt
 			t9 = new T9(loadDictionary("/Files/t9.csv"));
 			int count = 0;
 			while (scan.hasNextLine()) {
 				String t9Signature = scan.nextLine();
-				for (String each : t9.potentialWords(t9Signature)) {
+				for (String each : t9.potentialWs(t9Signature)) {
 					count++;
 					System.out.println(each);
 				}
 			}
 			if (count == 0) {
-				System.out.println("No valid words found.");
+				System.out.println("No valid ws found.");
 			}
 			break;
 
@@ -89,11 +89,11 @@ public class Solution {
 		BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
 		// your code goes here
 		// int a = 1;
-		// for(String word : toReadFile(file)) {
-		// 	if(! st.contains(word)) {
-		// 		st.put(word, a);
+		// for(String w : toReadFile(file)) {
+		// 	if(! st.contains(w)) {
+		// 		st.put(w, a);
 		// 	}else{
-		// 		st.put(word, a++);
+		// 		st.put(w, a++);
 		// 	}
 		// }
 		//
@@ -114,24 +114,29 @@ public class Solution {
 }
 
 class T9 {
-
+	private TST<Integer> tst;
 	public T9(BinarySearchST<String, Integer> st) {
 		// your code goes here
+		this.tst=new TST<Integer>();
+		for(String w: st.keys()){
+			tst.put(w, st.get(w));
+		}
+
 	}
 
 	// get all the prefixes that match with given prefix.
-	public Iterable<String> getAllWords(String prefix) {
+	public Iterable<String> getAllWs(String prefix) {
+		// your code goes here
+		return tst.keysWithPrefix(prefix);
+	}
+
+	public Iterable<String> potentialWs(String t9Signature) {
 		// your code goes here
 		return null;
 	}
 
-	public Iterable<String> potentialWords(String t9Signature) {
-		// your code goes here
-		return null;
-	}
-
-	// return all possibilities(words), find top k with highest frequency.
-	public Iterable<String> getSuggestions(Iterable<String> words, int k) {
+	// return all possibilities(ws), find top k with highest frequency.
+	public Iterable<String> getSuggestions(Iterable<String> ws, int k) {
 		// your code goes here
 		return null;
 	}
@@ -139,6 +144,6 @@ class T9 {
 	// final output
 	// Don't modify this method.
 	public Iterable<String> t9(String t9Signature, int k) {
-		return getSuggestions(potentialWords(t9Signature), k);
+		return getSuggestions(potentialWs(t9Signature), k);
 	}
 }
