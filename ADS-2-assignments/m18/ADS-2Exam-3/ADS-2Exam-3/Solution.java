@@ -88,13 +88,23 @@ public class Solution {
 	public static BinarySearchST<String, Integer> loadDictionary(String file) {
 		BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
 		// your code goes here
-		//TST<Integer>
-		int a = 1;
-		for(String word : toReadFile(file)) {
-			if(! st.contains(word)) {
-				st.put(word, a);
+		// int a = 1;
+		// for(String word : toReadFile(file)) {
+		// 	if(! st.contains(word)) {
+		// 		st.put(word, a);
+		// 	}else{
+		// 		st.put(word, a++);
+		// 	}
+		// }
+		//
+		int j = 1;
+		String[] tokens = toReadFile(file);
+		int length = tokens.length;
+		for(int i = 0; i < length; i++){
+			if(! st.contains(tokens[i])) {
+				st.put(tokens[i], j);
 			}else{
-				st.put(word, a++);
+				st.put(tokens[i], j++);
 			}
 		}
 		return st;
