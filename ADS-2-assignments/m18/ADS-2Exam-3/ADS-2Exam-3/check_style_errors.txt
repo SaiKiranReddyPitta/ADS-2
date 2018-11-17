@@ -316,25 +316,19 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:7:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:14:29: Parameter args should be final. [FinalParameters]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:21: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:96:39: Parameter file should be final. [FinalParameters]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:108:66: Parameter file should be final. [FinalParameters]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:132:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:138:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:138:15: Parameter st should be final. [FinalParameters]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:177: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:180: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:183: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:186: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:189: Line is longer than 80 characters (found 106). [LineLength]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:192: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:195: Line is longer than 80 characters (found 106). [LineLength]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:215: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:215:73: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:224:23: ';' is preceded with whitespace. [NoWhitespaceBefore]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:243:57: ',' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:109: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:133: First sentence should end with a period. [JavadocStyle]
+[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:142:5: Redundant 'public' modifier. [RedundantModifier]
+[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:142:15: Parameter st should be final. [FinalParameters]
+[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:178:58: '||' should be on a new line. [OperatorWrap]
+[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:182:65: '||' should be on a new line. [OperatorWrap]
+[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:186:65: '||' should be on a new line. [OperatorWrap]
+[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:190:65: '||' should be on a new line. [OperatorWrap]
+[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:194:65: '||' should be on a new line. [OperatorWrap]
+[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:198:65: '||' should be on a new line. [OperatorWrap]
+[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:202:65: '||' should be on a new line. [OperatorWrap]
+[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:206:65: '||' should be on a new line. [OperatorWrap]
 Audit done.
-Checkstyle ends with 19 errors.
+Checkstyle ends with 13 errors.
 Starting audit...
 Audit done.

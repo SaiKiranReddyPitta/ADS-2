@@ -11,14 +11,15 @@ public class Solution {
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         String cases = scan.nextLine();
 
         switch (cases) {
         case "loadDictionary":
             // input000.txt and output000.txt
-            BinarySearchST<String, Integer> hash = loadDictionary("/Files/t9.csv");
+            BinarySearchST<String, Integer> hash =
+            loadDictionary("/Files/t9.csv");
             while (scan.hasNextLine()) {
                 String key = scan.nextLine();
                 System.out.println(hash.get(key));
@@ -93,7 +94,7 @@ public class Solution {
      *
      * @return     { description_of_the_return_value }
      */
-    public static String[] toReadFile(String file) {
+    public static String[] toReadFile(final String file) {
         In in = new In(file);
         return in.readAllStrings();
     }
@@ -105,7 +106,7 @@ public class Solution {
      *
      * @return     { description_of_the_return_value }
      */
-    public static BinarySearchST<String, Integer> loadDictionary(String file) {
+    public static BinarySearchST<String, Integer> loadDictionary(final String file) {
         BinarySearchST<String, Integer>  st =
             new BinarySearchST<String, Integer>();
         // your code goes here
@@ -129,6 +130,9 @@ public class Solution {
  * Class for t 9.
  */
 class T9 {
+    /**
+     * { var_description }
+     */
     private TST<Integer> tst;
     /**
      * Constructs the object.
@@ -171,28 +175,36 @@ class T9 {
             String[] t = strInput.split("");
             String sum = "";
             for (String word : t) {
-                if (word.equals("a") || word.equals("b") || word.equals("c")) {
+                if (word.equals("a") || word.equals("b") ||
+                    word.equals("c")) {
                     sum = sum + "2";
 
-                } else if (word.equals("d") || word.equals("e") || word.equals("f")) {
+                } else if (word.equals("d") || word.equals("e") ||
+                    word.equals("f")) {
                     sum = sum + "3";
 
-                } else if (word.equals("g") || word.equals("h") || word.equals("i")) {
+                } else if (word.equals("g") || word.equals("h") ||
+                    word.equals("i")) {
                     sum = sum + "4";
 
-                } else if (word.equals("j") || word.equals("k") || word.equals("l")) {
+                } else if (word.equals("j") || word.equals("k") ||
+                    word.equals("l")) {
                     sum = sum + "5";
 
-                } else if (word.equals("m") || word.equals("n") || word.equals("o")) {
+                } else if (word.equals("m") || word.equals("n") ||
+                    word.equals("o")) {
                     sum = sum + "6";
 
-                } else if (word.equals("p") || word.equals("q") || word.equals("r") || word.equals("s")) {
+                } else if (word.equals("p") || word.equals("q") ||
+                           word.equals("r") || word.equals("s")) {
                     sum = sum + "7";
 
-                } else if (word.equals("t") || word.equals("u") || word.equals("v")) {
+                } else if (word.equals("t") || word.equals("u") ||
+                    word.equals("v")) {
                     sum = sum + "8";
 
-                } else if (word.equals("w") || word.equals("x") || word.equals("y") || word.equals("z")) {
+                } else if (word.equals("w") || word.equals("x") ||
+                           word.equals("y") || word.equals("z")) {
                     sum = sum + "9";
                 }
 
@@ -212,7 +224,8 @@ class T9 {
      *
      * @return     The suggestions.
      */
-    public Iterable<String> getSuggestions(final Iterable<String> words,final  int k) {
+    public Iterable<String> getSuggestions(
+        final Iterable<String> words, final  int k) {
         // your code goes here
         // Hashmap<Integer, String> hash = new Hashmap();
         TreeSet<String> ts = new TreeSet<>();
@@ -221,7 +234,7 @@ class T9 {
         for (String word : words) {
             mPQ.insert(tst.get(word));
         }
-        for (int a = 0 ; a < k; a++) {
+        for (int a = 0; a < k; a++) {
             int i = mPQ.delMax();
             for (String word : words) {
                 if (i == tst.get(word)) {
@@ -240,7 +253,7 @@ class T9 {
      *
      * @return     { description_of_the_return_value }
      */
-    public Iterable<String> t9(final String t9Signature,final int k) {
+    public Iterable<String> t9(final String t9Signature, final int k) {
 
         return getSuggestions(potentialWords(t9Signature), k);
     }
