@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+import java.util.TreeSet;
 
 public class Solution {
 
@@ -132,13 +132,30 @@ class T9 {
 
 	public Iterable<String> potentialWs(String t9Signature) {
 		// your code goes here
+//		TreeSet<String> ts = new TreeSet<>();
+
 		return null;
 	}
 
 	// return all possibilities(ws), find top k with highest frequency.
-	public Iterable<String> getSuggestions(Iterable<String> ws, int k) {
+	public Iterable<String> getSuggestions(Iterable<String> words, int k) {
 		// your code goes here
-		return null;
+		// Hashmap<Integer, String> hash = new Hashmap();
+		TreeSet<String> ts = new TreeSet<>();
+		//BinarySearchST<String, Integer> bst = new BinarySearchST<>();
+		MaxPQ<Integer> mPQ = new MaxPQ<>();
+		for(String word : words){
+			mPQ.insert(tst.get(word));
+		}
+		for(int a = 0 ; a < k; a++) {
+			int i = mPQ.delMax();
+			for(String word : words){
+				if (i == tst.get(word)){
+					ts.add(word);
+				}
+			}
+		}
+		return ts;
 	}
 
 	// final output
