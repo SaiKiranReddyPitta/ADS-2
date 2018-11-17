@@ -106,17 +106,18 @@ public class Solution {
      * @return     { description_of_the_return_value }
      */
     public static BinarySearchST<String, Integer> loadDictionary(String file) {
-        BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
+        BinarySearchST<String, Integer>  st =
+            new BinarySearchST<String, Integer>();
         // your code goes here
         int j = 1;
         String[] tokens = toReadFile(file);
         int length = tokens.length;
-        for(int i = 0; i < length; i++){
+        for (int i = 0; i < length; i++) {
             String s = tokens[i].toLowerCase();
-            if(! st.contains(s)) {
+            if (!st.contains(s)) {
                 st.put(s, j);
-            }else{
-                st.put(s, st.get(s)+1);
+            } else {
+                st.put(s, st.get(s) + 1);
             }
         }
         return st;
@@ -129,10 +130,15 @@ public class Solution {
  */
 class T9 {
     private TST<Integer> tst;
+    /**
+     * Constructs the object.
+     *
+     * @param      st    { parameter_description }
+     */
     public T9(BinarySearchST<String, Integer> st) {
         // your code goes here
-        this.tst=new TST<Integer>();
-        for(String w: st.keys()){
+        this.tst = new TST<Integer>();
+        for (String w: st.keys()) {
             tst.put(w, st.get(w));
         }
 
@@ -145,19 +151,19 @@ class T9 {
      *
      * @return     All ws.
      */
-    public Iterable<String> getAllWs(String prefix) {
+    public Iterable<String> getAllWs(final String prefix) {
         // your code goes here
         return tst.keysWithPrefix(prefix);
     }
 
-    /**
+    /**.
      * { function_description }
      *
      * @param      t9Signature  The t 9 signature
      *
      * @return     { description_of_the_return_value }
      */
-    public Iterable<String> potentialWords(String t9Signature) {
+    public Iterable<String> potentialWords(final String t9Signature) {
         // your code goes here
         //TreeSet<String> ts = new TreeSet<>();
         TreeSet<String> ts = new TreeSet<>();
@@ -165,37 +171,36 @@ class T9 {
             String[] t = strInput.split("");
             String sum = "";
             for (String word : t) {
-                if(word.equals("a") || word.equals("b") || word.equals("c")) {
-                    sum = sum + "2";    
-                    
+                if (word.equals("a") || word.equals("b") || word.equals("c")) {
+                    sum = sum + "2";
+
                 } else if (word.equals("d") || word.equals("e") || word.equals("f")) {
-                    sum = sum + "3";    
-                    
+                    sum = sum + "3";
+
                 } else if (word.equals("g") || word.equals("h") || word.equals("i")) {
-                    sum = sum + "4";    
-                    
+                    sum = sum + "4";
+
                 } else if (word.equals("j") || word.equals("k") || word.equals("l")) {
-                    sum = sum + "5";    
-                    
+                    sum = sum + "5";
+
                 } else if (word.equals("m") || word.equals("n") || word.equals("o")) {
-                    sum = sum + "6";    
-                    
+                    sum = sum + "6";
+
                 } else if (word.equals("p") || word.equals("q") || word.equals("r") || word.equals("s")) {
-                    sum = sum + "7";    
-                    
+                    sum = sum + "7";
+
                 } else if (word.equals("t") || word.equals("u") || word.equals("v")) {
-                    sum = sum + "8";    
-                    
+                    sum = sum + "8";
+
                 } else if (word.equals("w") || word.equals("x") || word.equals("y") || word.equals("z")) {
-                    sum = sum + "9";    
-                    
-                } 
+                    sum = sum + "9";
+                }
 
             }
-            if(sum.equals(t9Signature)) {
+            if (sum.equals(t9Signature)) {
                 ts.add(strInput);
             }
-        } 
+        }
         return ts;
     }
 
@@ -207,19 +212,19 @@ class T9 {
      *
      * @return     The suggestions.
      */
-    public Iterable<String> getSuggestions(Iterable<String> words, int k) {
+    public Iterable<String> getSuggestions(final Iterable<String> words,final  int k) {
         // your code goes here
         // Hashmap<Integer, String> hash = new Hashmap();
         TreeSet<String> ts = new TreeSet<>();
         //BinarySearchST<String, Integer> bst = new BinarySearchST<>();
         MaxPQ<Integer> mPQ = new MaxPQ<>();
-        for(String word : words){
+        for (String word : words) {
             mPQ.insert(tst.get(word));
         }
-        for(int a = 0 ; a < k; a++) {
+        for (int a = 0 ; a < k; a++) {
             int i = mPQ.delMax();
-            for(String word : words){
-                if (i == tst.get(word)){
+            for (String word : words) {
+                if (i == tst.get(word)) {
                     ts.add(word);
                 }
             }
@@ -235,7 +240,7 @@ class T9 {
      *
      * @return     { description_of_the_return_value }
      */
-    public Iterable<String> t9(String t9Signature, int k) {
+    public Iterable<String> t9(final String t9Signature,final int k) {
 
         return getSuggestions(potentialWords(t9Signature), k);
     }
