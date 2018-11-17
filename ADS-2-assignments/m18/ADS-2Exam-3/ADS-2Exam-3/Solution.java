@@ -161,6 +161,42 @@ class T9 {
 	// final output
 	// Don't modify this method.
 	public Iterable<String> t9(String t9Signature, int k) {
+		TreeSet<String> ts = new TreeSet<>();
+		for (String strInput : tst.keys()) {
+			String[] t = strInput.split("");
+			String sum = "";
+			for (String word : t) {
+				if(word.equals("a") || word.equals("b") || word.equals("c")) {
+					sum = sum + "2";	
+					
+				} else if (word.equals("d") || word.equals("e") || word.equals("f")) {
+					sum = sum + "3";	
+					
+				} else if (word.equals("g") || word.equals("h") || word.equals("i")) {
+					sum = sum + "4";	
+					
+				} else if (word.equals("j") || word.equals("k") || word.equals("l")) {
+					sum = sum + "5";	
+					
+				} else if (word.equals("m") || word.equals("n") || word.equals("o")) {
+					sum = sum + "6";	
+					
+				} else if (word.equals("p") || word.equals("q") || word.equals("r") || word.equals("s")) {
+					sum = sum + "7";	
+					
+				} else if (word.equals("t") || word.equals("u") || word.equals("v")) {
+					sum = sum + "8";	
+					
+				} else if (word.equals("w") || word.equals("x") || word.equals("y") || word.equals("z")) {
+					sum = sum + "9";	
+					
+				} 
+
+			}
+			if(sum.equals(t9Signature)) {
+				ts.add(strInput);
+			}
+		} 
 		return getSuggestions(potentialWs(t9Signature), k);
 	}
 }
