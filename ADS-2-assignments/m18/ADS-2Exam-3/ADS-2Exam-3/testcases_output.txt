@@ -1,4 +1,4 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 52
 28
@@ -11,8 +11,8 @@ Expected Output:
 
 Your Output: 
 52
-27
-238
+28
+240
 3
 98
 54

@@ -103,7 +103,7 @@ public class Solution {
 		for(int i = 0; i < length; i++){
 			String s = tokens[i].toLowerCase();
 			if(! st.contains(s)) {
-				st.put(tokens[i], j);
+				st.put(s, j);
 			}else{
 				st.put(s, st.get(s)+1);
 			}
