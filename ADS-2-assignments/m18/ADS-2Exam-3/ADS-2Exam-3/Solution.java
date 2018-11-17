@@ -104,7 +104,7 @@ public class Solution {
 			if(! st.contains(tokens[i])) {
 				st.put(tokens[i], j);
 			}else{
-				st.put(tokens[i], j++);
+				st.put(tokens[i], st.get(tokens[i])+1);
 			}
 		}
 		return st;
