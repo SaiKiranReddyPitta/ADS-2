@@ -223,8 +223,9 @@ paper
 keep
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at T9.getSuggestions(Solution.java:147)
+Exception in thread "main" java.util.NoSuchElementException: Priority queue underflow
+	at MaxPQ.delMax(MaxPQ.java:174)
+	at T9.getSuggestions(Solution.java:186)
 	at T9.t9(Solution.java:200)
 	at Solution.main(Solution.java:70)
 ----------------------------------------

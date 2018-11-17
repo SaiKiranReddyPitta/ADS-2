@@ -132,35 +132,7 @@ class T9 {
 
 	public Iterable<String> potentialWs(String t9Signature) {
 		// your code goes here
-//		TreeSet<String> ts = new TreeSet<>();
-
-		return null;
-	}
-
-	// return all possibilities(ws), find top k with highest frequency.
-	public Iterable<String> getSuggestions(Iterable<String> words, int k) {
-		// your code goes here
-		// Hashmap<Integer, String> hash = new Hashmap();
-		TreeSet<String> ts = new TreeSet<>();
-		//BinarySearchST<String, Integer> bst = new BinarySearchST<>();
-		MaxPQ<Integer> mPQ = new MaxPQ<>();
-		for(String word : words){
-			mPQ.insert(tst.get(word));
-		}
-		for(int a = 0 ; a < k; a++) {
-			int i = mPQ.delMax();
-			for(String word : words){
-				if (i == tst.get(word)){
-					ts.add(word);
-				}
-			}
-		}
-		return ts;
-	}
-
-	// final output
-	// Don't modify this method.
-	public Iterable<String> t9(String t9Signature, int k) {
+		//TreeSet<String> ts = new TreeSet<>();
 		TreeSet<String> ts = new TreeSet<>();
 		for (String strInput : tst.keys()) {
 			String[] t = strInput.split("");
@@ -197,6 +169,34 @@ class T9 {
 				ts.add(strInput);
 			}
 		} 
+		return ts;
+	}
+
+	// return all possibilities(ws), find top k with highest frequency.
+	public Iterable<String> getSuggestions(Iterable<String> words, int k) {
+		// your code goes here
+		// Hashmap<Integer, String> hash = new Hashmap();
+		TreeSet<String> ts = new TreeSet<>();
+		//BinarySearchST<String, Integer> bst = new BinarySearchST<>();
+		MaxPQ<Integer> mPQ = new MaxPQ<>();
+		for(String word : words){
+			mPQ.insert(tst.get(word));
+		}
+		for(int a = 0 ; a < k; a++) {
+			int i = mPQ.delMax();
+			for(String word : words){
+				if (i == tst.get(word)){
+					ts.add(word);
+				}
+			}
+		}
+		return ts;
+	}
+
+	// final output
+	// Don't modify this method.
+	public Iterable<String> t9(String t9Signature, int k) {
+
 		return getSuggestions(potentialWs(t9Signature), k);
 	}
 }
