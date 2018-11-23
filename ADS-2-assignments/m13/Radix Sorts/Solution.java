@@ -63,9 +63,6 @@ Complexity of this method is O(1) : single swap for a single exch() call
         a[j] = temp;
     }
 
-    /**.
-     *The Complexity is O(1) : boolean check
-     */
     // is v less than w, starting at character d
     // DEPRECATED BECAUSE OF SLOW SUBSTRING EXTRACTION IN JAVA 7
     // private static boolean less(String v, String w, int d) {
@@ -74,6 +71,9 @@ Complexity of this method is O(1) : single swap for a single exch() call
     // }
 
     // is v less than w, starting at character d
+/**.
+Complexity is O(1) : boolean check
+*/
     private static boolean less(String v, String w, int d) {
         assert v.substring(0, d).equals(w.substring(0, d));
         for (int i = d; i < Math.min(v.length(), w.length()); i++) {
@@ -82,18 +82,18 @@ Complexity of this method is O(1) : single swap for a single exch() call
         }
         return v.length() < w.length();
     }
-    /**.
-    // is the array sorted
-     the Complexity is O(1) : boolean check
-     */
+/**.
+// is the array sorted
+Complexity is O(1) : boolean check
+*/
     private static boolean isSorted(String[] a) {
         for (int i = 1; i < a.length; i++)
             if (a[i].compareTo(a[i-1]) < 0) return false;
         return true;
     }
-    /**.
-     * the Complexity is O(n) : displaying the items array and string return
-     */
+/**.
+Complexity is O(n) : displaying the items array and string return
+*/
     public String toString(final String[] array) {
         String s = "[";
         for (int i = 0; i < array.length - 1; i++) {
@@ -103,3 +103,5 @@ Complexity of this method is O(1) : single swap for a single exch() call
         return s;
     }
 }
+
+
