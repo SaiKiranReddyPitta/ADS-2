@@ -11,7 +11,7 @@ final class Solution {
 
     }
     /**
-     * printEnergies.
+     * print Energies.
      * @param fileName String.
      **/
     public static void printEnergies(final String fileName) {
@@ -31,7 +31,7 @@ final class Solution {
         }
     }
     /**
-     * printSeam method.
+     * print Seam method.
      * @param carver seamCarver.
      * @param seam int[].
      * @param direction boolean.
