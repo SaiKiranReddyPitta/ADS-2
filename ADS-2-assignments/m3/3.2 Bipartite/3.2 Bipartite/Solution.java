@@ -1,38 +1,39 @@
-/**
+/**.
  * { item_description }
  */
 import java.util.Scanner;
 /**.
  * { item_description }
  */
-final class Solution {
+public final class Solution {
     /**.
-     * { function_description }
+     * Constructs the object.
      */
     private Solution() {
         /**.
          * { item_description }
          */
     }
-    // The Time complexity for the main method is O(N).
     /**.
      * { function_description }
      *
      * @param      args  The arguments
      */
+    // time complexity for the main method is O(N).
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
-        int vertex = Integer.parseInt(sc.nextLine());
-        Graph graph = new Graph(vertex);
-        int edge = Integer.parseInt(sc.nextLine());
-        for (int i = 0; i < edge; i++) {
-            String[] tokens = sc.nextLine().split(" ");
-            int v = Integer.parseInt(tokens[0]);
-            int w = Integer.parseInt(tokens[1]);
-            graph.addEdge(v, w);
+        int n = sc.nextInt();
+        int m = sc.nextInt();
+        sc.nextLine();
+        Graph g = new Graph(n);
+        while (sc.hasNext()) {
+            String line = sc.nextLine();
+            String[] tokens = line.split(" ");
+            g.addEdge(Integer.parseInt(tokens[0]),
+                         Integer.parseInt(tokens[1]));
         }
-        Bipartite bipartite = new Bipartite(graph);
-        if (bipartite.isBipartite()) {
+        DirectedCycle dc = new DirectedCycle(g);
+        if (dc.isBipartite()) {
             System.out.println("Graph is bipartite");
         } else {
             System.out.println("Graph is not a bipartite");
