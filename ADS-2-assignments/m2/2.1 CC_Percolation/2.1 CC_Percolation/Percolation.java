@@ -35,8 +35,8 @@ class Percolation {
     }
 
     /**.
+     * The Time Complexity is O(1)
      * Gets the index.
-     * time complexity in average case is 1.
      * @param      i     { parameter_description }
      * @param      j     { parameter_description }
      *
@@ -48,8 +48,8 @@ class Percolation {
     }
 
     /**.
+     * The Time Complexity is O(1)
      * { function_description }
-     * time complexity in average case is 1.
      * @param      r     { parameter_description }
      * @param      c     { parameter_description }
      */
@@ -78,8 +78,8 @@ class Percolation {
     }
 
     /**.
+     * The Time Complexity is O(1)
      * { function_description }
-     * time complexity in average case is 1.
      * @return     { description_of_the_return_value }
      */
 

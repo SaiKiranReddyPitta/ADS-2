@@ -3,14 +3,14 @@
  */
 interface Graph {
     /**.
-     * { function_description }
+     * Method
      *
      * @return     { description_of_the_return_value }
      */
 
     int vert();
     /**.
-     * { function_description }
+     * Method
      *
      * @return     { description_of_the_return_value }
      */
@@ -47,6 +47,7 @@ interface Graph {
 /**.
  * List of graphs.
  */
+/**graph implementation.**/
 class GraphList implements Graph {
     /**.
      * { var_description }
@@ -92,8 +93,8 @@ class GraphList implements Graph {
     }
 
     /**
+     * The Time complexity is O(1)
      * Returns the number of vertices in this graph.
-     * time complexity is 1 in avg case
      * @return the number of vertices in this graph
      */
 
@@ -102,8 +103,8 @@ class GraphList implements Graph {
     }
 
     /**
+     * The Time complexity is O(1)
      * Returns the number of edges in this graph.
-     * time complexity is 1 in avg case
      * @return the number of edges in this graph
      */
 
@@ -112,8 +113,8 @@ class GraphList implements Graph {
     }
 
     /**.
+     * The Time complexity is O(1)
      * Adds a vertex.
-     * time complexity is 1
      * @param      v     { parameter_description }
      */
 
@@ -123,8 +124,8 @@ class GraphList implements Graph {
     }
 
     /**.
+     * The Time complexity is O(1)
      * Determines if it has edge.
-     * time complexity is O(N).
      * @param      v     { parameter_description }
      * @param      w     { parameter_description }
      *
@@ -141,8 +142,8 @@ class GraphList implements Graph {
     }
 
     /**
+     * The Time complexity is O(1)
      * Adds the undirected edge v-w to this graph.
-     * time complexity is 1 in avg case
      * @param  v one vertex in the edge
      * @param  w the other vertex in the edge
      */
@@ -162,10 +163,9 @@ class GraphList implements Graph {
 
     /**
      * Returns the vertices adjacent to vertex {@code v}.
-     * time complexity is 1 in avg case
+     * The Time complexity is 1
      * @param  v the vertex
-     * @return the vertices adjacent to vertex {@code v}, as an iterable
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
+     * @return the vertices adjacent to vertex {@code v}.
      */
 
     public Iterable<Integer> adj(final int v) {
@@ -183,15 +183,12 @@ class GraphList implements Graph {
     public int degree(final int v) {
         return adj[v].size();
     }
-
     /**
-     * Returns a string representation of this graph.
-     * time complexity is O(N^2).
-     * @return the number of vertices <em>V</em>, followed by
-     * the number of edges <em>E</em>,
-     *         followed by the <em>V</em> adjacency lists
+     * @brief [brief description]
+     * @details [long description]
+     * The Time complexity is O(N ^ 2)
+     * @return value
      */
-
     public String toString() {
         String s = "";
         s += ver + " vertices, " + edg + " edges" + '\n';
