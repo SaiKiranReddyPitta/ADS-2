@@ -1,50 +1,47 @@
 import java.util.Scanner;
 import java.util.HashMap;
 /**
- * client class.
+ *class for solution.
  */
-public final class Solution {
+final class Solution {
     /**
-     * Constructs the object.
+     *an empty constructor.
      */
     private Solution() {
-        //unused constructor.
     }
     /**
-     * main method.
-     *
+     *the main method is to read the user.
+     * input.
+     *time complexity is O(E + V)
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
-        String[] input = sc.nextLine().split(" ");
-        String[] stations = sc.nextLine().split(" ");
-        int n = Integer.parseInt(input[0]);
-        int m = Integer.parseInt(input[1]);
-        EdgeWeightedGraph ewgobj = new EdgeWeightedGraph(n);
-        HashMap<String, Integer> hashobj = new HashMap<String, Integer>();
-        for (int i = 0; i < n; i++) {
-            hashobj.put(stations[i], i);
+        HashMap<String, Integer> map
+        = new HashMap<String, Integer>();
+        String[] tokens = sc.nextLine().split(" ");
+        int edges = Integer.parseInt(tokens[1]);
+        String[] vertices = sc.nextLine().split(" ");
+        for (int i = 0; i < vertices.length; i++) {
+            map.put(vertices[i], i);
         }
-        while (m > 0) {
-            String[] distance = sc.nextLine().split(" ");
-            Edge edge = new Edge(hashobj.get(distance[0]),
-            hashobj.get(distance[1]), Double.parseDouble(distance[2]));
-            ewgobj.addEdge(edge);
-            m--;
+        Edge e;
+        EdgeWeightedGraph ewg
+        = new EdgeWeightedGraph(vertices.length);
+        for (int i = 0; i < edges; i++) {
+            String[] directPath = sc.nextLine().split(" ");
+            e = new Edge(map.get(directPath[0]),
+                               map.get(directPath[1]),
+                               Double.parseDouble(directPath[2]));
+            ewg.addEdge(e);
         }
         int queries = Integer.parseInt(sc.nextLine());
-        while (queries > 0) {
-            String[] srcDest = sc.nextLine().split(" ");
-            int source = hashobj.get(srcDest[0]);
-            DijkstraUndirectedSP dijkstra = new
-            DijkstraUndirectedSP(ewgobj, source);
-            if (dijkstra.hasPathTo(hashobj.get(srcDest[1]))) {
-                System.out.println(
-                    (int) dijkstra.distTo(hashobj.get(srcDest[1])));
-            }
-            queries--;
+        DijkstraSP dsp;
+        for (int i = 0; i < queries; i++) {
+            String[] check = sc.nextLine().split(" ");
+            int source = map.get(check[0]);
+            dsp = new DijkstraSP(ewg, source);
+            System.out.println((int) dsp.distance(map.get(check[1])));
         }
     }
 }
-

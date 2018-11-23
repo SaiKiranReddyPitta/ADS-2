@@ -1,105 +1,59 @@
 /**
  * Class for edge weighted graph.
  */
-public class EdgeWeightedGraph {
+class EdgeWeightedGraph {
     /**
-     * variable vertex.
-     */
-    private int vert;
+      *the variable to store vertices.
+      */
+    private int vertices;
     /**
-     * variable edge.
-     */
-    private int edges;
-    /**
-     * bag of adjacent vertices list.
+     *the array of bags to store.
+     *complete adjacency list.
      */
     private Bag<Edge>[] adj;
     /**
-     * Constructs the object.
-     *
-     * @param  v1 integer vertex.
+     *the constructor to initialize.
+     *time complexity is O(V).
+     * @param      v vertices count
      */
-    public EdgeWeightedGraph(final int v1) {
-        this.vert = v1;
-        this.edges = 0;
-        adj = (Bag<Edge>[]) new Bag[v1];
-        for (int i = 0; i < v1; i++) {
+    EdgeWeightedGraph(final int v) {
+        this.vertices = v;
+        adj = (Bag<Edge>[]) new Bag[vertices];
+        for (int i = 0; i < vertices; i++) {
             adj[i] = new Bag<Edge>();
         }
     }
-
     /**
-     * return vertices.
+     *this method returns the vertices count.
      *
-     * @return vertex count
+     * @return  number of vertices.
+     * Time complexity is O(1).
      */
     public int vertices() {
-        return this.vert;
+        return this.vertices;
     }
     /**
-     * return edges.
+     *this method is to build the graph.
      *
-     * @return edge count
+     * @param      edge  The edge
+     * Time complexity is O(1).
      */
-    public int edges() {
-        return this.edges;
+    public void addEdge(final Edge edge) {
+        int vertexOne = edge.either();
+        int vertexTwo = edge.other(vertexOne);
+        adj[vertexOne].add(edge);
+        adj[vertexTwo].add(edge);
     }
     /**
-     * Adds an edge.
-     *
-     * @param      e Edge object
+     *returns the iterator to return the bag at that.
+     *vertex.
+     * @param      vertex  The vertex
+     *time complexity is O(1)
+     * @return iterator at that vertex.
      */
-    public void addEdge(final Edge e) {
-        int v = e.either();
-        int w = e.other(v);
-        adj[v].add(e);
-        adj[w].add(e);
-        edges++;
+    public Iterable<Edge> adj(final int vertex) {
+        return adj[vertex];
     }
-    /**
-     * returns adjacent vertex.
-     *
-     * @param      v integer.
-     *
-     * @return  adjacent vertex.
-     */
-    public Iterable<Edge> adj(final int v) {
-
-        return adj[v];
-    }
-    /**
-     * degree that gives size of adjacent list.
-     *
-     * @param      v vertex.
-     *
-     * @return degree.
-     */
-    public int degree(final int v) {
-
-        return adj[v].size();
-    }
-    /**
-     * edges that iterates and add.
-     *
-     * @return iterable list.
-     */
-    public Iterable<Edge> edge() {
-        Bag<Edge> list = new Bag<Edge>();
-        for (int v = 0; v < vert; v++) {
-            int selfLoops = 0;
-            for (Edge e : adj(v)) {
-                if (e.other(v) > v) {
-                    list.add(e);
-                } else if (e.other(v) == v) {
-                    if (selfLoops % 2 == 0) {
-                     list.add(e);
-                    }
-                    selfLoops++;
-                }
-            }
-        }
-        return list;
-    }
-
 }
+
 
