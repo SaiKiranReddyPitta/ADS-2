@@ -46,13 +46,30 @@ import java.util.NoSuchElementException;
  *  @param <Item> the generic type of an item in this stack
  */
 public class Stack<Item> implements Iterable<Item> {
+    /**
+     * variable.
+     */
     private Node<Item> first;     // top of stack
+    /**
+     * variable.
+     */
     private int n;                // size of the stack
-
+    /**
+     * variable.
+     */
     // helper linked list class
     private static class Node<Item> {
+    /**
+     * variable.
+     */
         private Item item;
+        /**
+         * variable.
+         */
         private Node<Item> next;
+        /**
+         * variable.
+         */
     }
 
     /**
@@ -62,29 +79,26 @@ public class Stack<Item> implements Iterable<Item> {
         first = null;
         n = 0;
     }
-
-    /**
-     * Returns true if this stack is empty.
-     *
-     * @return true if this stack is empty; false otherwise
+   /**
+     * Is the stack empty?
+     * The Time complexity is O(1)
+     * @return value
      */
     public boolean isEmpty() {
         return first == null;
     }
-
-    /**
-     * Returns the number of items in this stack.
-     *
-     * @return the number of items in this stack
+   /**
+     * Return the number of items in the stack.
+     * The Time complexity is O(1)
+     * @return value
      */
     public int size() {
         return n;
     }
-
-    /**
-     * Adds the item to this stack.
-     *
-     * @param  item the item to add
+   /**
+     * Add the item to the stack.
+     * The Time complexity is O(1)
+     * @param item value
      */
     public void push(Item item) {
         Node<Item> oldfirst = first;
@@ -93,12 +107,9 @@ public class Stack<Item> implements Iterable<Item> {
         first.next = oldfirst;
         n++;
     }
-
-    /**
-     * Removes and returns the item most recently added to this stack.
-     *
-     * @return the item most recently added
-     * @throws NoSuchElementException if this stack is empty
+   /**
+     * @return value
+     * The Time complexity is O(1)
      */
     public Item pop() {
         if (isEmpty()) throw new NoSuchElementException("Stack underflow");
@@ -107,23 +118,18 @@ public class Stack<Item> implements Iterable<Item> {
         n--;
         return item;                   // return the saved item
     }
-
-
-    /**
-     * Returns (but does not remove) the item most recently added to this stack.
-     *
-     * @return the item most recently added to this stack
-     * @throws NoSuchElementException if this stack is empty
+   /**
+     * @return value
+     * The Time complexity is O(1)
      */
     public Item peek() {
         if (isEmpty()) throw new NoSuchElementException("Stack underflow");
         return first.item;
     }
-
-    /**
-     * Returns a string representation of this stack.
-     *
-     * @return the sequence of items in this stack in LIFO order, separated by spaces
+   /**
+     * Return string representation.
+     * The Time complexity is O(N)
+     * @return value
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
@@ -135,10 +141,9 @@ public class Stack<Item> implements Iterable<Item> {
     }
        
 
-    /**
-     * Returns an iterator to this stack that iterates through the items in LIFO order.
-     *
-     * @return an iterator to this stack that iterates through the items in LIFO order
+   /**
+     * @return value
+     * The Time complexity is O(N)
      */
     public Iterator<Item> iterator() {
         return new ListIterator<Item>(first);
@@ -151,15 +156,25 @@ public class Stack<Item> implements Iterable<Item> {
         public ListIterator(Node<Item> first) {
             current = first;
         }
-
+        /**
+         * @return value
+         * The Time complexity is O(1)
+         */
         public boolean hasNext() {
             return current != null;
         }
-
+             /**
+              * @brief [brief description]
+              * @details [long description]
+              * The Time complexity is O(1)
+              */
         public void remove() {
             throw new UnsupportedOperationException();
         }
-
+            /**
+             * @return value
+             * The Time complexity is O(1)
+             */
         public Item next() {
             if (!hasNext()) throw new NoSuchElementException();
             Item item = current.item;

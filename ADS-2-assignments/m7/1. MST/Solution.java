@@ -10,8 +10,10 @@ public final class Solution {
 
     }
     /**
-     * main method.
-     * @param      args  The arguments
+     * @brief [brief description]
+     * @details [long description]
+     * The Time complexity is O(N)
+     * @param args [description]
      */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);

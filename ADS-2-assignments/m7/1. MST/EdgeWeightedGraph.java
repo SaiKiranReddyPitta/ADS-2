@@ -27,27 +27,26 @@ public class EdgeWeightedGraph {
             adj[i] = new Bag<Edge>();
         }
     }
-
     /**
-     * return vertices.
-     *
-     * @return vertex count
+     * Returns the number of vertices in this edge-weighted graph.
+     * The Time complexity is 1
+     * @return the number of vertices in this edge-weighted graph
      */
     public int vertices() {
         return this.vert;
     }
     /**
-     * return edges.
-     *
-     * @return edge count
+     * Returns the number of edges in this edge-weighted graph.
+     * The Time complexity is 1
+     * @return the number of edges in this edge-weighted graph
      */
     public int edges() {
         return this.edges;
     }
     /**
-     * Adds an edge.
-     *
-     * @param      e Edge object
+     * Adds the undirected edge {@code e} to this edge-weighted graph.
+     * The Time complexity is 1
+     * @param  e the edge
      */
     public void addEdge(final Edge e) {
         int v = e.either();
@@ -57,31 +56,29 @@ public class EdgeWeightedGraph {
         edges++;
     }
     /**
-     * returns adjacent vertex.
-     *
-     * @param      v integer.
-     *
-     * @return  adjacent vertex.
+     * Returns the edges incident on vertex {@code v}.
+     * The Time complexity is 1
+     * @param  v the vertex
+     * @return the edges incident on vertex {@code v}
      */
     public Iterable<Edge> adj(final int v) {
 
         return adj[v];
     }
     /**
-     * degree that gives size of adjacent list.
-     *
-     * @param      v vertex.
-     *
-     * @return degree.
+     * Returns the degree of vertex {@code v}.
+     * The Time complexity is 1
+     * @param  v the vertex
+     * @return the degree of vertex {@code v}
      */
     public int degree(final int v) {
 
         return adj[v].size();
     }
     /**
-     * edges that iterates and add.
-     *
-     * @return iterable list.
+     * Returns all edges in this edge-weighted graph.
+     * The Time complexity is 1
+     * @return all edges in this edge-weighted graph, as an iterable
      */
     public Iterable<Edge> edge() {
         Bag<Edge> list = new Bag<Edge>();

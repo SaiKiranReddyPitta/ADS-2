@@ -40,10 +40,10 @@ public class LazyPrimMST {
 
     }
     /**
-     * weight method.
-     *
-     * @param      g     graph
-     * @param      s     integer
+     * {Private Accessor method of prim}.
+     * The Time complexity is E log E and space proprotional -> E
+     * @param      g     {EdgeWeightedGraph}
+     * @param      s     {Vertex}
      */
     private void prim(final EdgeWeightedGraph g, final int s) {
         scan(g, s);
@@ -67,10 +67,11 @@ public class LazyPrimMST {
         }
     }
     /**
-     * scan method.
-     *
-     * @param      g  graph.
-     * @param      v  int
+     * {add all edges e incident to v onto pq if the.
+     * other endpoint has not yet been scanned}
+     * The Time complexity is number of Edges
+     * @param      g     {EdgeWeightedGraph}
+     * @param      v     {Vertex}
      */
     private void scan(final EdgeWeightedGraph g, final int v) {
         assert !marked[v];
@@ -82,16 +83,17 @@ public class LazyPrimMST {
         }
     }
     /**
-     *Iterable edges.
-     * @return   iterable edge.
+     * Returns the edges in a minimum spanning tree (or forest).
+     * @return the edges in a minimum spanning tree (or forest)
+     *  as an iterable of edges
+     *  The Time complexity is O(1).
      */
     public Iterable<Edge> edges() {
         return mst;
     }
     /**
-     * weight method.
-     *
-     * @return weight.
+     * @return the sum of the edge weights.
+     * in a minimum spanning tree (or forest)
      */
     public double weight() {
         return weight;

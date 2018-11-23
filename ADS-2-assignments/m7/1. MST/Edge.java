@@ -26,24 +26,29 @@ public class Edge implements Comparable<Edge> {
         this.weight = weight1;
     }
     /**
-     *weight method.
-     * @return weight.
+     * Returns the weight of this edge.
+     * The Time complexity is 1
+     * @return the weight of this edge
      */
     public double weight() {
         return weight;
     }
     /**
-     *that vertex.
-     * @return vertex.
+     * Returns either endpoint of this edge.
+     * The Time complexity is 1
+     * @return either endpoint of this edge
      */
     public int either() {
         return v;
     }
     /**
-     *  next vertex.
-     * @param      vertex  The vertex
-     *
-     * @return other vertex.
+     * The Time complexity is 1
+     * Returns the endpoint of this edge that is.
+     * different from the given vertex
+     * @param  vertex one endpoint of this edge
+     * @return the other endpoint of this edge
+     * @throws IllegalArgumentException if the vertex is not one of the
+     * endpoints of this edge
      */
     public int other(final int vertex) {
         if (vertex == v) {
@@ -57,11 +62,10 @@ public class Edge implements Comparable<Edge> {
 
     }
     /**
-     * compare to method.
-     *
-     * @param      that  The that
-     *
-     * @return  integer.
+     * Compares two edges by weight.
+     * Time complexity is 1
+     * @param  that the other edge
+     * @return a negative integer, zero, or positive integer.
      */
     public int compareTo(final Edge that) {
         return Double.compare(this.weight, that.weight);
