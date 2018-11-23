@@ -9,24 +9,4 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m7\1. MST\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m7\1. MST\Stack.java:14: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m7\1. MST\Stack.java:27: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m7\1. MST\Stack.java:28: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m7\1. MST\Stack.java:29: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m7\1. MST\Stack.java:36: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m7\1. MST\Stack.java:61: Type Javadoc comment is missing @param <Item> tag. [JavadocType]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m7\1. MST\Stack.java:103:22: Parameter item should be final. [FinalParameters]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m7\1. MST\Stack.java:115: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m7\1. MST\Stack.java:126: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m7\1. MST\Stack.java:142: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m7\1. MST\Stack.java:153: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m7\1. MST\Stack.java:154:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m7\1. MST\Stack.java:156:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m7\1. MST\Stack.java:156:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m7\1. MST\Stack.java:156:29: Parameter first should be final. [FinalParameters]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m7\1. MST\Stack.java:156:40: 'first' hides a field. [HiddenField]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m7\1. MST\Stack.java:179: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m7\1. MST\Stack.java:181: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 19 errors.
