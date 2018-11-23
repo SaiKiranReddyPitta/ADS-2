@@ -128,12 +128,6 @@ Starting audit...
 Audit done.
 Checkstyle ends with 13 errors.
 Starting audit...
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\3.2 Bipartite\Solution.java:5: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\3.2 Bipartite\Solution.java:9: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\3.2 Bipartite\Solution.java:12:8: Unused @param tag for 'args'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 3 errors.
 Starting audit...
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.2 Bipartite\3.2 Bipartite\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.

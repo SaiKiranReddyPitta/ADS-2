@@ -2,14 +2,12 @@
  * { item_description }
  */
 import java.util.Scanner;
-/**
+/**.
  * { item_description }
  */
 final class Solution {
-    /**
+    /**.
      * { function_description }
-     *
-     * @param      args  The arguments
      */
     private Solution() {
         /**.
