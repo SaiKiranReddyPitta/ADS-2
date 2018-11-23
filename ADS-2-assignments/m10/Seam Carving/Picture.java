@@ -192,7 +192,7 @@ public final class Picture implements ActionListener {
    /**
      * Returns a {@link JLabel} containing this picture, for embedding in a {@link JPanel},
      * {@link JFrame} or other GUI widget.
-     *
+     * Time complexity of O(1).
      * @return the {@code JLabel}
      */
     public JLabel getJLabel() {
@@ -202,6 +202,7 @@ public final class Picture implements ActionListener {
     }
 
    /**
+    * Time complexity of O(1).
      * Sets the origin to be the upper left pixel. This is the default.
      */
     public void setOriginUpperLeft() {
@@ -209,6 +210,7 @@ public final class Picture implements ActionListener {
     }
 
    /**
+    * Time complexity of O(1).
      * Sets the origin to be the lower left pixel.
      */
     public void setOriginLowerLeft() {
@@ -216,6 +218,7 @@ public final class Picture implements ActionListener {
     }
 
    /**
+    * Time complexity of O(1).
      * Displays the picture in a window on the screen.
      */
     public void show() {
@@ -253,7 +256,7 @@ public final class Picture implements ActionListener {
 
    /**
      * Returns the height of the picture.
-     *
+     * Time complexity of O(1).
      * @return the height of the picture (in pixels)
      */
     public int height() {
@@ -262,18 +265,24 @@ public final class Picture implements ActionListener {
 
    /**
      * Returns the width of the picture.
-     *
+     * Time complexity of O(1).
      * @return the width of the picture (in pixels)
      */
     public int width() {
         return width;
     }
-
+    /**
+     * Time complexity of O(1).
+     * @param row [description]
+     */
     private void validateRowIndex(int row) {
         if (row < 0 || row >= height())
             throw new IllegalArgumentException("row index must be between 0 and " + (height() - 1) + ": " + row);
     }
-
+    /**
+     * Time complexity of O(1).
+     * @param col [description]
+     */
     private void validateColumnIndex(int col) {
         if (col < 0 || col >= width())
             throw new IllegalArgumentException("column index must be between 0 and " + (width() - 1) + ": " + col);
@@ -281,7 +290,7 @@ public final class Picture implements ActionListener {
 
    /**
      * Returns the color of pixel ({@code col}, {@code row}) as a {@link java.awt.Color}.
-     *
+     * Time complexity of O(1).
      * @param col the column index
      * @param row the row index
      * @return the color of pixel ({@code col}, {@code row})
@@ -295,6 +304,7 @@ public final class Picture implements ActionListener {
     }
 
    /**
+    * Time complexity of O(1).
      * Returns the color of pixel ({@code col}, {@code row}) as an {@code int}.
      * Using this method can be more efficient than {@link #get(int, int)} because
      * it does not create a {@code Color} object.
@@ -312,6 +322,7 @@ public final class Picture implements ActionListener {
     }
 
    /**
+    * Time complexity of O(1).
      * Sets the color of pixel ({@code col}, {@code row}) to given color.
      *
      * @param col the column index
@@ -329,6 +340,7 @@ public final class Picture implements ActionListener {
     }
 
    /**
+    * Time complexity of O(1).
      * Sets the color of pixel ({@code col}, {@code row}) to given color.
      *
      * @param col the column index
@@ -344,6 +356,7 @@ public final class Picture implements ActionListener {
     }
 
    /**
+    * Time complexity of O(1).
      * Returns true if this picture is equal to the argument picture.
      *
      * @param other the other picture
@@ -364,6 +377,7 @@ public final class Picture implements ActionListener {
     }
 
    /**
+    * Time complexity of O(row*col).
      * Returns a string representation of this picture.
      * The result is a <code>width</code>-by-<code>height</code> matrix of pixels,
      * where the color of a pixel is represented using 6 hex digits to encode
@@ -387,6 +401,7 @@ public final class Picture implements ActionListener {
     }
 
     /**
+     * Time complexity of O(1).
      * This operation is not supported because pictures are mutable.
      *
      * @return does not return a value
@@ -397,6 +412,7 @@ public final class Picture implements ActionListener {
     }
 
    /**
+    * Time complexity of O(1).
      * Saves the picture to a file in either PNG or JPEG format.
      * The filetype extension must be either .png or .jpg.
      *
@@ -410,6 +426,7 @@ public final class Picture implements ActionListener {
     }
 
    /**
+    * Time complexity of O(1).
      * Saves the picture to a file in a PNG or JPEG image format.
      *
      * @param  file the file
@@ -434,6 +451,7 @@ public final class Picture implements ActionListener {
     }
 
    /**
+    * Time complexity of O(1).
      * Opens a save dialog box when the user selects "Save As" from the menu.
      */
     @Override
