@@ -42,18 +42,16 @@ public class Stack<Item> implements Iterable<Item> {
     }
     /**.
      * Determines if empty.
-     *
-     * @return     True if empty, False otherwise.
-     * Time complexity is O(1)
+     * @return True if empty, False otherwise.
+     * The Time complexity is O(1)
      */
     public boolean isEmpty() {
         return first == null;
     }
     /**.
      * { function_description }
-     *
-     * @return     { description_of_the_return_value }
-     * Time complexity is O(1)
+     * @return { description_of_the_return_value }
+     * The Time complexity is O(1)
      */
     public int size() {
         return n;
@@ -61,8 +59,8 @@ public class Stack<Item> implements Iterable<Item> {
     }
     /**.
      * { function_description }
-     * Time complexity is O(1)
-     * @param      item  The item
+     * The Time complexity is O(1)
+     * @param item  The item
      */
     public void push(final Item item) {
         Node oldfirst = first;
@@ -73,8 +71,8 @@ public class Stack<Item> implements Iterable<Item> {
     }
     /**.
      * { function_description }
-     * Time complexity is O(1)
-     * @return     { description_of_the_return_value }
+     * The Time complexity is O(1)
+     * @return { description_of_the_return_value }
      */
     public Item pop() {
         if (isEmpty()) {
@@ -87,8 +85,8 @@ public class Stack<Item> implements Iterable<Item> {
     }
     /**.
      * { function_description }
-     * Time complexity is O(1)
-     * @return     { description_of_the_return_value }
+     * The Time complexity is O(1)
+     * @return { description_of_the_return_value }
      */
     public Item peek() {
         if (isEmpty()) {
@@ -98,7 +96,7 @@ public class Stack<Item> implements Iterable<Item> {
     }
     /**.
      * Returns a string representation of the object.
-     * Time complexity is O(N)
+     * The Time complexity is O(N)
      * @return     String representation of the object.
      */
     public String toString() {
@@ -110,8 +108,7 @@ public class Stack<Item> implements Iterable<Item> {
     }
     /**.
      * { function_description }
-     *
-     * @return     { description_of_the_return_value }
+     * @return { description_of_the_return_value }
      */
     public Iterator<Item> iterator() {
         return new ListIterator();
@@ -126,23 +123,23 @@ public class Stack<Item> implements Iterable<Item> {
         private Node current = first;
         /**.
          * Determines if it has next.
-         * Time complexity is O(1)
-         * @return     True if has next, False otherwise.
+         * The Time complexity is O(1)
+         * @return True if has next, False otherwise.
          */
         public boolean hasNext() {
             return current != null;
         }
         /**.
          * { function_description }
-         * Time complexity is O(1)
+         * The Time complexity is O(1)
          */
         public void remove() {
             throw new UnsupportedOperationException();
         }
         /**.
          * { function_description }
-         * Time complexity is O(1)
-         * @return     { description_of_the_return_value }
+         * The Time complexity is O(1)
+         * @return { description_of_the_return_value }
          */
         public Item next() {
             if (!hasNext()) {

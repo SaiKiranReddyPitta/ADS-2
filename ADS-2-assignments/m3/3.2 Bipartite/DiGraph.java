@@ -43,7 +43,7 @@ public class DiGraph {
     /**
      * @brief [brief description]
      * @details [long description]
-     * Time complexity is O(1)
+     * The Time complexity is O(1)
      * @return value
      */
      public int vertex() {
@@ -52,7 +52,7 @@ public class DiGraph {
     /**
      * @brief [brief description]
      * @details [long description]
-     * Time complexity is O(1)
+     * The Time complexity is O(1)
      * @return value
      */
      public int edge() {
@@ -69,7 +69,7 @@ public class DiGraph {
     /**
      * @brief [brief description]
      * @details [long description]
-     * Time complexity is O(N ^ 2)
+     * The Time complexity is O(N ^ 2)
      * @return value
      */
     public DiGraph reverse() {
@@ -85,14 +85,14 @@ public class DiGraph {
     /**
      * @brief [brief description]
      * @details [long description]
-     * Time complexity is O(1)
+     * The Time complexity is O(1)
      * @param v value
      * @param w value
      */
     public void addEdge(final int v, final int w) {
 
-        // validateVertex(v);
-        // validateVertex(w);
+    // validateVertex(v);
+    // validateVertex(w);
     // if (v == w) {
     //     System.out.println(vertices + " vertices, " + edges + " edges");
     //     System.out.println("No edges");
@@ -105,7 +105,7 @@ public class DiGraph {
     /**
      * @brief [brief description]
      * @details [long description]
-     * Time complexity is O(1)
+     * The Time complexity is O(1)
      * @param s value
      */
     public void addvertices(final String s) {
@@ -115,7 +115,7 @@ public class DiGraph {
     /**
      * @brief [brief description]
      * @details [long description]
-     * Time complexity is O(N ^ 2)
+     * The Time complexity is O(N ^ 2)
      * @return value
      */
      public String toString() {

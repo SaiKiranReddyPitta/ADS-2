@@ -37,7 +37,7 @@ class DirectedCycle {
     /**
      * @brief [brief description]
      * @details [long description]
-     * Time complexity is E + V
+     * The Time complexity is E + V
      * @param graph value
      * @param v value
      */
@@ -70,7 +70,7 @@ class DirectedCycle {
 
     /**
      * @return value
-     * Time complexity is O(1)
+     * The Time complexity is O(1)
      */
     public boolean isbipartite() {
         return bipartite;
@@ -78,7 +78,7 @@ class DirectedCycle {
 
     /**
      * @return value
-     * Time complexity is O(1)
+     * The Time complexity is O(1)
      */
     public Iterable<Integer> cycle() {
         return cycle;

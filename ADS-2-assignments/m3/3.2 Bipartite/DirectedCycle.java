@@ -42,7 +42,7 @@ public class DirectedCycle {
      *
      * @param      g     { parameter_description }
      * @param      v     { parameter_description }
-     * Time complexity is E + V
+     * The Time complexity is E + V
      */
     private void dfs(final Graph g, final int v) {
         isBipartite = !isBipartite;
@@ -70,7 +70,7 @@ public class DirectedCycle {
      * Determines if it has cycle.
      *
      * @return     True if has cycle, False otherwise.
-     * Time complexity is O(1).
+     * The Time complexity is O(1).
      */
     public boolean hasCycle() {
         return cycle != null;
@@ -79,7 +79,7 @@ public class DirectedCycle {
      * Determines if bipartite.
      *
      * @return     True if bipartite, False otherwise.
-     * Time complexity is O(1)
+     * The Time complexity is O(1)
      */
     public boolean isBipartite() {
         return isBipartite;
@@ -88,7 +88,7 @@ public class DirectedCycle {
      * { function_description }
      *
      * @return     { description_of_the_return_value }
-     * Time complexity is O(1)
+     * The Time complexity is O(1)
      */
     public Iterable<Integer> cycle() {
         return cycle;

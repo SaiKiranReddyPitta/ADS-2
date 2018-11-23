@@ -40,8 +40,8 @@ public class Bag<Item> implements Iterable<Item> {
 /**.
  * Determines if empty.
  *
- * @return     True if empty, False otherwise.
- *  Time complexity is O(1)
+ * @return True if empty, False otherwise.
+ *  The Time complexity is O(1)
  */
     public boolean isEmpty() {
         return first == null;
@@ -49,17 +49,16 @@ public class Bag<Item> implements Iterable<Item> {
 /**.
  * { function_description }
  *
- * @return     { description_of_the_return_value }
- * Time complexity is O(1)
+ * @return { description_of_the_return_value }
+ * The Time complexity is O(1)
  */
     public int size() {
         return n;
     }
 /**.
  * { function_description }
- *
- * @param      item  The item
- * Time complexity is O(1)
+ * @param item  The item
+ * The Time complexity is O(1)
  */
     public void add(final Item item) {
         Node oldfirst = first;
@@ -70,9 +69,8 @@ public class Bag<Item> implements Iterable<Item> {
     }
 /**.
  * { function_description }
- *
- * @return     { description_of_the_return_value }
- * Time complexity is O(N)
+ * @return { description_of_the_return_value }
+ * The Time complexity is O(N)
  */
     public Iterator<Item> iterator()  {
         return new ListIterator();
@@ -87,16 +85,15 @@ public class Bag<Item> implements Iterable<Item> {
         private Node current = first;
         /**.
          * Determines if it has next.
-         *
-         * @return     True if has next, False otherwise.
-         * Time complexity is O(1)
+         * @return True if has next, False otherwise.
+         * The Time complexity is O(1)
          */
         public boolean hasNext() {
             return current != null;
         }
         /**.
          * { function_description }
-         * Time complexity is O(1)
+         * The Time complexity is O(1)
          */
         public void remove() {
             throw new UnsupportedOperationException();
@@ -104,8 +101,8 @@ public class Bag<Item> implements Iterable<Item> {
         /**.
          * { function_description }
          *
-         * @return     { description_of_the_return_value }
-         * Time complexity is O(1)
+         * @return { description_of_the_return_value }
+         * The Time complexity is O(1)
          */
         public Item next() {
             Item item = current.item;
