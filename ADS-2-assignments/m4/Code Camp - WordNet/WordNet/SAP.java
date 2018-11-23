@@ -1,101 +1,51 @@
-/**.
+import java.util.ArrayList;
+/**
  * Class for sap.
  */
 public class SAP {
-    /**.
-     * { var_description }
+    /**
+     * dg of the type Digraph.
      */
-    private Digraph dig;
-    /**.
-     * { var_description }
-     */
-    private int ancestor = -1;
-    /**.
-     * { var_description }
-     */
-    private int len = Integer.MAX_VALUE;
-    /**.
+    private Digraph dg;
+    /**
      * Constructs the object.
-     *
-     * @param      g     { parameter_description }
+     * @param      g     Digraph.
      */
     public SAP(final Digraph g) {
-        dig = g;
+        dg = g;
     }
-    /**.
-     * { function_description }
-     * The Time complexity is 1 in avg case
-     * @param      v     { parameter_description }
-     * @param      w     { parameter_description }
-     *
-     * @return     { description_of_the_return_value }
+    /**
+     * This finds out the shortest ancestral path between two vertices.
+     * @param      v     ArrayList.
+     * @param      w     ArrayList.
+     * @return     integer array.
+     * Time complexity for this method is O(v*w*V) where v is length of
+     * array list and w is length of array list and V is no of vertices.
      */
-    public int length(final int v, final int w) {
-        int a = ancestor(v, w);
-        if (a == -1) {
-            return -1;
-        } else {
-            return len;
-        }
-    }
-    /**.
-     * { function_description }
-     * The Time complexity is O(N).
-     * @param      v     { parameter_description }
-     * @param      w     { parameter_description }
-     *
-     * @return     { description_of_the_return_value }
-     */
-    public int ancestor(final int v, final int w) {
-        BreadthFirstSearch bfsv = new BreadthFirstSearch(dig, v);
-        BreadthFirstSearch bfsw = new BreadthFirstSearch(dig, w);
-        for (int i = 0; i < dig.vert(); i++) {
-            if (bfsv.hasPathTo(i) && bfsw.hasPathTo(i)) {
-                int vlen = bfsv.distTo(i);
-                int wlen = bfsw.distTo(i);
-                if (vlen + wlen < len) {
-                    len = vlen + wlen;
-                    ancestor = i;
+    public int[] length(final ArrayList<Integer> v,
+        final ArrayList<Integer> w) {
+        int min = dg.vertices();
+        int temp = 0;
+        for (int i = 0; i < v.size(); i++) {
+            for (int j = 0; j < w.size(); j++) {
+                BreadthFirstDirectedPaths b1 =
+                new BreadthFirstDirectedPaths(dg, v.get(i));
+                BreadthFirstDirectedPaths b2 =
+                new BreadthFirstDirectedPaths(dg, w.get(j));
+                for (int k = 0; k < dg.vertices(); k++) {
+                    if (b1.hasPathTo(k) && b2.hasPathTo(k)) {
+                        int sum = b1.distTo(k) + b2.distTo(k);
+                        if (sum < min) {
+                            min = sum;
+                            temp = k;
+                        }
+                    }
                 }
             }
         }
-        return ancestor;
+        int[] res = {min, temp};
+        return res;
     }
-    /**.
-     * { function_description }
-     * The Time complexity is 1 in avg case
-     * @param      v     { parameter_description }
-     * @param      w     { parameter_description }
-     *
-     * @return     { description_of_the_return_value }
-     */
-    public int length(final Iterable<Integer> v, final Iterable<Integer> w) {
-        int a = ancestor(v, w);
-        if (a == -1) {
-            return -1;
-        } else {
-            return len;
-        }
-    }
-    /**.
-     * { function_description }
-     * The Time complexity is O(N^2)
-     * @param      v     { parameter_description }
-     * @param      w     { parameter_description }
-     *
-     * @return     { description_of_the_return_value }
-     */
-    public int ancestor(final Iterable<Integer> v, final Iterable<Integer> w) {
-        for (int i : v) {
-            for (int j : w) {
-                ancestor(i, j);
-            }
-        }
-        return ancestor;
-    }
-
-    // do unit testing of this class
-    // public static void main(String[] args)
 }
 
 

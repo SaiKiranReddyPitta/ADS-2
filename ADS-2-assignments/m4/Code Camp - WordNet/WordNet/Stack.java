@@ -1,65 +1,41 @@
-/**.
- * { item_description }
- */
 import java.util.Iterator;
-/**.
- * { item_description }
- */
-import java.util.NoSuchElementException;
-/**.
- * List of .
- *
+/**
+ * Stack class.
  * @param      <Item>  The item
  */
 public class Stack<Item> implements Iterable<Item> {
-    /**.
-     * { var_description }
+    /**
+     * size of the stack.
      */
     private int n;
-    /**.
-     * { var_description }
+    /**
+     * top of stack.
      */
     private Node first;
-    /**.
+    /**
      * Class for node.
      */
     private class Node {
-        /**.
-         * { var_description }
+        /**
+         * item of type Item.
          */
         private Item item;
-        /**.
-         * { var_description }
+        /**
+         * next of type Node.
          */
         private Node next;
     }
-    /**.
-     * Constructs the object.
-     */
+    /**
+      * Create an empty stack.
+      */
     public Stack() {
         first = null;
         n = 0;
     }
-    /**.
-     * Determines if empty.
-     *
-     * @return     True if empty, False otherwise.
-     */
-    public boolean isEmpty() {
-        return first == null;
-    }
-    /**.
-     * { function_description }
-     *
-     * @return     { description_of_the_return_value }
-     */
-    public int size() {
-        return n;
-    }
-    /**.
-     * { function_description }
-     * The Time complexity in average case is 1.
+    /**
+     * adds the item to the stack.
      * @param      item  The item
+     * Time complexity for this method is O(1).
      */
     public void push(final Item item) {
         Node oldfirst = first;
@@ -68,35 +44,34 @@ public class Stack<Item> implements Iterable<Item> {
         first.next = oldfirst;
         n++;
     }
-    /**.
-     * { function_description }
-     * The Time complexity in average case is 1.
-     * @return     { description_of_the_return_value }
+    /**
+     * Delete and return the item
+     * most recently added to the stack.
+     * Throw an exception if no such item
+     * exists because the stack is empty.
+     * @return     Item.
+     * Time complexity for this method is O(1).
      */
     public Item pop() {
-        if (isEmpty()) {
-            throw new RuntimeException("Stack underflow");
-        }
         Item item = first.item;        // save item to return
         first = first.next;            // delete first node
         n--;
         return item;                   // return the saved item
     }
-    /**.
-     * { function_description }
-     * The Time complexity in average case is 1.
-     * @return     { description_of_the_return_value }
+    /**
+     * Return the item most recently added to the stack.
+     * Throw an exception if no such item
+     * exists because the stack is empty.
+     * @return    Item.
+     * Time complexity for this method is O(1).
      */
     public Item peek() {
-        if (isEmpty()) {
-            throw new RuntimeException("Stack underflow");
-        }
         return first.item;
     }
-    /**.
+    /**
      * Returns a string representation of the object.
-     * The Time complexity is O(N).
      * @return     String representation of the object.
+     * Time complexity for this method is O(N).
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
@@ -105,46 +80,36 @@ public class Stack<Item> implements Iterable<Item> {
         }
         return s.toString();
     }
-    /**.
-     * { function_description }
-     * The Time complexity in average case is 1.
-     * @return     { description_of_the_return_value }
+    /**
+     * Return an iterator to the stack that
+     * iterates through the items in LIFO order.
+     * @return     Iterator.
      */
     public Iterator<Item> iterator() {
         return new ListIterator();
     }
-    /**.
-     * Class for list iterator.
+    /**
+     * an iterator, doesn't implement remove() since it's optional.
      */
     private class ListIterator implements Iterator<Item> {
-        /**.
-         * { var_description }
+        /**
+         * current of type Node.
          */
         private Node current = first;
-        /**.
+        /**
          * Determines if it has next.
-         * The Time complexity in average case is 1.
          * @return     True if has next, False otherwise.
+         * Time complexity for this method is O(1).
          */
         public boolean hasNext() {
             return current != null;
         }
-        /**.
-         * The Time complexity in average case is 1.
-         * { function_description }
-         */
-        public void remove() {
-            throw new UnsupportedOperationException();
-        }
-        /**.
-         * { function_description }
-         * The Time complexity in average case is 1.
-         * @return     { description_of_the_return_value }
+        /**
+         * returns the next item of the current item.
+         * @return     Item.
+         * Time complexity for this method is O(1).
          */
         public Item next() {
-            if (!hasNext()) {
-                throw new NoSuchElementException();
-            }
             Item item = current.item;
             current = current.next;
             return item;

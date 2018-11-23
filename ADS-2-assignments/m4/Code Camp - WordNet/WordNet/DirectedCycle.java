@@ -1,43 +1,47 @@
-/**.
+/**
  * Class for directed cycle.
  */
-public class DirectedCycle {
-    /**.
-     * { var_description }
+class DirectedCycle {
+    /**
+     * marked[v] = has vertex v been marked?.
      */
     private boolean[] marked;
-    /**.
-     * { var_description }
+    /**
+     * edgeTo[v] = previous vertex on path to v.
      */
     private int[] edgeTo;
-    /**.
-     * { var_description }
+    /**
+     * onStack[v] = is vertex on the stack?.
      */
     private boolean[] onStack;
-    /**.
-     * { var_description }
+    /**
+     * directed cycle (or null if no such cycle).
      */
     private Stack<Integer> cycle;
-    /**.
-     * Constructs the object.
-     *
-     * @param      g     { parameter_description }
+
+    /**
+     * Determines whether the digraph {@code G}
+     * has a directed cycle and, if so,
+     * finds such a cycle.
+     * @param g the digraph
      */
     public DirectedCycle(final Digraph g) {
-        marked  = new boolean[g.vert()];
-        onStack = new boolean[g.vert()];
-        edgeTo  = new int[g.vert()];
-        for (int v = 0; v < g.vert(); v++) {
+        marked  = new boolean[g.vertices()];
+        onStack = new boolean[g.vertices()];
+        edgeTo  = new int[g.vertices()];
+        for (int v = 0; v < g.vertices(); v++) {
             if (!marked[v] && cycle == null) {
                 dfs(g, v);
             }
         }
     }
-    /**.
-     * { function_description }
-     * The Time complexity is 1 in avg case
-     * @param      g     { parameter_description }
-     * @param      v     { parameter_description }
+    /**
+     * check that algorithm computes either
+     * the topological order or finds a directed cycle.
+     * @param      g     g of type Digraph.
+     * @param      v     v of type int.
+     * Time complexity for this method is O(E) where E
+     * is no of edges.
      */
     private void dfs(final Digraph g, final int v) {
         onStack[v] = true;
@@ -55,65 +59,30 @@ public class DirectedCycle {
                 }
                 cycle.push(w);
                 cycle.push(v);
-                assert check();
             }
         }
         onStack[v] = false;
     }
-/**.
- * Determines if it has cycle.
- * The Time complexity is 1 in avg case
- * @return     True if has cycle, False otherwise.
- */
+    /**
+     * Does the digraph have a directed cycle?.
+     * @return {@code true} if the digraph has
+     * a directed cycle, {@code false} otherwise
+     * Time complexity for this method is O(1).
+     */
     public boolean hasCycle() {
         return cycle != null;
     }
-    /**.
-     *
-     *
-     * @return     { description_of_the_return_value }
+    /**
+     * Returns a directed cycle if the digraph has
+     * a directed cycle, and {@code null} otherwise.
+     * @return a directed cycle (as an iterable)
+     * if the digraph has a directed cycle,
+     *    and {@code null} otherwise
+     * Time complexity for this method is O(1).
      */
     public Iterable<Integer> cycle() {
         return cycle;
     }
-    /**.
-     * { function_description }
-     * The Time complexity is O(N).
-     * @return     { description_of_the_return_value }
-     */
-    private boolean check() {
-        if (hasCycle()) {
-            // verify cycle
-            int first = -1, last = -1;
-            for (int v : cycle()) {
-                if (first == -1) {
-                    first = v;
-                }
-                last = v;
-            }
-            if (first != last) {
-                System.err.printf("cycle begins with %d and ends with %d\n",
-                 first, last);
-                return false;
-            }
-        }
-        return true;
-    }
-
-        // In in = new In(args[0]);
-        // Digraph G = new Digraph(in);
-
-        // DirectedCycle finder = new DirectedCycle(G);
-        // if (finder.hasCycle()) {
-        //     StdOut.print("Directed cycle: ");
-        //     for (int v : finder.cycle()) {
-        //         StdOut.print(v + " ");
-        //     }
-        //     StdOut.println();
-        // }
-
-        // else {
-        //     StdOut.println("No directed cycle");
-        // }
-        // StdOut.println();
 }
+
+

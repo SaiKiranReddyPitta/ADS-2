@@ -1,45 +1,36 @@
-/**.
- * { item_description }
- */
 import java.util.Iterator;
-/**.
- * { item_description }
- */
-import java.util.NoSuchElementException;
-/**.
- * List of .
- *
+/**
+ * Queue class.
  * @param      <Item>  The item
  */
 public class Queue<Item> implements Iterable<Item> {
-    /**.
-     * { var_description }
+    /**
+     * beginning of queue.
      */
     private Node<Item> first;
-    /**.
-     * { var_description }
+    /**
+     * end of queue.
      */
     private Node<Item> last;
-    /**.
-     * { var_description }
+    /**
+     * number of elements on queue.
      */
     private int n;
-    /**.
+    /**
      * Class for node.
-     *
      * @param      <Item>  The item
      */
     private static class Node<Item> {
-        /**.
-         * { var_description }
+        /**
+         * item of type Item.
          */
         private Item item;
-        /**.
-         * { var_description }
+        /**
+         * next of type Node.
          */
         private Node<Item> next;
     }
-    /**.
+    /**
      * Initializes an empty queue.
      */
     public Queue() {
@@ -47,40 +38,35 @@ public class Queue<Item> implements Iterable<Item> {
         last  = null;
         n = 0;
     }
-    /**.
-     * Determines if empty.
-     * The Time complexity is 1 in avg case
-     * @return     True if empty, False otherwise.
+    /**
+     * Returns true if this queue is empty.
+     * @return {@code true} if this queue
+     * is empty; {@code false} otherwise
+     * Time complexity for this method is O(1).
      */
     public boolean isEmpty() {
         return first == null;
     }
-    /**.
-     * { function_description }
-     * The Time complexity is 1 in avg case
-     * @return     { description_of_the_return_value }
+    /**
+     * Returns the number of items in this queue.
+     * @return the number of items in this queue
+     * Time complexity for this method is O(1).
      */
     public int size() {
         return n;
     }
-
     /**
      * Returns the item least recently added to this queue.
-     * The Time complexity is 1 in avg case
      * @return the item least recently added to this queue
-     * @throws NoSuchElementException if this queue is empty
+     * Time complexity for this method is O(1).
      */
     public Item peek() {
-        if (isEmpty()) {
-            throw new NoSuchElementException("Queue underflow");
-        }
         return first.item;
     }
-
     /**
      * Adds the item to this queue.
-     * The Time complexity is 1 in avg case
      * @param  item the item to add
+     * Time complexity for this method is O(1).
      */
     public void enqueue(final Item item) {
         Node<Item> oldlast = last;
@@ -94,17 +80,13 @@ public class Queue<Item> implements Iterable<Item> {
         }
         n++;
     }
-
-    /**.
-     * Removes and returns the item on this queue that was least recently added.
-     * The Time complexity is 1 in avg case
+    /**
+     * Removes and returns the item on this queue
+     * that was least recently added.
      * @return the item on this queue that was least recently added
-     * @throws NoSuchElementException if this queue is empty
+     * Time complexity for this method is O(1).
      */
     public Item dequeue() {
-        if (isEmpty()) {
-            throw new NoSuchElementException("Queue underflow");
-        }
         Item item = first.item;
         first = first.next;
         n--;
@@ -113,10 +95,11 @@ public class Queue<Item> implements Iterable<Item> {
         }
         return item;
     }
-    /**.
-     * Returns a string representation of the object.
-     * The Time complexity is O(N)
-     * @return     String representation of the object.
+
+    /**
+     * Returns a string representation of this queue.
+     * @return the sequence of items in FIFO order, separated by spaces
+     * Time complexity for this method is O(N).
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
@@ -126,60 +109,57 @@ public class Queue<Item> implements Iterable<Item> {
         }
         return s.toString();
     }
-    /**.
-     * { function_description }
-     * The Time complexity is 1 in avg case
-     * @return     { description_of_the_return_value }
+    /**
+     * Returns an iterator that iterates over the items
+     * in this queue in FIFO order.
+     * @return an iterator that iterates over the items
+     * in this queue in FIFO order
      */
     public Iterator<Item> iterator()  {
         return new ListIterator<Item>(first);
     }
-
-    /**.
+    /**
      * Class for list iterator.
-     *
      * @param      <Item>  The item
      */
     private class ListIterator<Item> implements Iterator<Item> {
-        /**.
-         * { var_description }
+        /**
+         * current of type Node.
          */
         private Node<Item> current;
-        /**.
+        /**
          * Constructs the object.
-         *
-         * @param      fst  The first
+         * @param      f  The first
          */
-        ListIterator(final Node<Item> fst) {
-            current = fst;
+        ListIterator(final Node<Item> f) {
+            current = f;
         }
-        /**.
+        /**
          * Determines if it has next.
-         * The Time complexity is 1 in avg case
          * @return     True if has next, False otherwise.
+         * Time complexity for this method is O(1).
          */
         public boolean hasNext() {
             return current != null;
         }
-        /**.
-         * { function_description }
-         * The Time complexity is 1 in avg case
+        /**
+         * remove method.
          */
         public void remove() {
             throw new UnsupportedOperationException();
         }
-        /**.
-         * { function_description }
-         * The Time complexity is 1 in avg case
-         * @return     { description_of_the_return_value }
+        /**
+         * returns the next item of the current item.
+         * @return     item.
+         * Time complexity for this method is O(1).
          */
         public Item next() {
-            if (!hasNext()) {
-                throw new NoSuchElementException();
-            }
             Item item = current.item;
             current = current.next;
             return item;
         }
     }
 }
+
+
+

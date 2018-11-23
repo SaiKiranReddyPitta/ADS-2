@@ -1,127 +1,129 @@
-/**.
+/**
  * Class for digraph.
  */
 public class Digraph {
-    /**.
-     * { var_description }
+
+    /**
+     * seperator in tostring method.
      */
-    private int ver;
-    /**.
-     * { var_description }
+    private static final String NEWLINE = System.getProperty("line.separator");
+
+    /**
+     * number of vertices in this digraph.
      */
-    private int edg;
-    /**.
-     * { var_description }
+    private final int vertices;
+    /**
+     * number of edges in this digraph.
+     */
+    private int edges;
+    /**
+     * adj[v] = adjacency list for vertex v.
      */
     private Bag<Integer>[] adj;
-    /**.
-     * { var_description }
-     */
-    private int size = 0;
-    /**.
-     * { var_description }
+    /**
+     * indegree[v] = indegree of vertex v.
      */
     private int[] indegree;
-    /**
-     * Initializes an empty graph with V vertices and 0 edges.
-     * param V the number of vertices
-     *
-     * @param  vt number of vertices
-     */
-    Digraph(final int vt) {
-        this.ver = vt;
-        this.edg = 0;
-        indegree = new int[ver];
-        size = 0;
-        adj = (Bag<Integer>[]) new Bag[ver];
-        for (int v = 0; v < ver; v++) {
-            adj[v] = new Bag<Integer>();
-        }
-    }
 
     /**
-     * Returns the number of vertices in this graph.
-     * The Time complexity is 1 in avg case
-     * @return the number of vertices in this graph
+     * outdegree[v] = outdegree of vertex v.
      */
-    public int vert() {
-        return ver;
-    }
+    private int[] outdegree;
 
     /**
-     * Returns the number of edges in this graph.
-     * The Time complexity is 1 in avg case
-     * @return the number of edges in this graph
+     * Initializes an empty digraph with <em>V</em> vertices.
+     * @param  v the number of vertices
      */
-    public int edge() {
-        return edg;
-    }
-    // /**.
-    //  * Adds a vertex.
-    //  * The Time complexity is 1
-    //  * @param      v     { parameter_description }
-    //  */
-    // public void addVertex(final String v) {
-    //     vertexes[size] = v;
-    //     size++;
-    // }
-    /**.
-     * Determines if it has edge.
-     * The Time complexity is O(N).
-     * @param      v     { parameter_description }
-     * @param      w     { parameter_description }
-     *
-     * @return     True if has edge, False otherwise.
-     */
-    public boolean hasEdge(final int v, final int w) {
-        for (int i : adj[w]) {
-            if (i == w) {
-                return true;
-            }
+    public Digraph(final int v) {
+        vertices = v;
+        edges = 0;
+        indegree = new int[vertices];
+        outdegree = new int[vertices];
+        adj = (Bag<Integer>[]) new Bag[vertices];
+        for (int i = 0; i < vertices; i++) {
+            adj[i] = new Bag<Integer>();
         }
-        return false;
     }
     /**
-     * Adds the undirected edge v-w to this graph.
-     * The Time complexity is 1 in avg case
-     * @param  v one vertex in the edge
-     * @param  w the other vertex in the edge
+     * Returns the number of vertices in this digraph.
+     * @return the number of vertices in this digraph
+     * Time complexity is O(1).
+     */
+    public int vertices() {
+        return vertices;
+    }
+    /**
+     * Returns the number of edges in this digraph.
+     * @return the number of edges in this digraph
+     * Time complexity is O(1).
+     */
+    public int edges() {
+        return edges;
+    }
+    /**
+     * Adds the directed edge v→w to this digraph.
+     * @param  v the tail vertex
+     * @param  w the head vertex
+     * Time complexity is O(1).
      */
     public void addEdge(final int v, final int w) {
-        edg++;
         adj[v].add(w);
+        outdegree[v]++;
         indegree[w]++;
-        // adj[w].add(v);
+        edges++;
     }
     /**
-     * Returns the vertices adjacent to vertex {@code v}.
-     * The Time complexity is 1 in avg case
+     * Returns the vertices adjacent from
+     * vertex {@code v} in this digraph.
      * @param  v the vertex
-     * @return the vertices adjacent to vertex {@code v}, as an iterable
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
+     * @return the vertices adjacent from vertex
+     * {@code v} in this digraph, as an iterable
+     * Time complexity is O(v).
      */
     public Iterable<Integer> adj(final int v) {
         return adj[v];
     }
-
     /**
-     * Returns the degree of vertex {@code v}.
-     * The Time complexity in average case is 1.
-     * @param  v the vertex
-     * @return the degree of vertex {@code v}
-     */
-    public int outdegree(final int v) {
-        return adj[v].size();
-    }
-
-    /**
-     * The Time complexity in average case is 1.
-     *
+     * Returns the number of directed edges
+     * incident to vertex {@code v}.
+     * This is known as the <em>indegree</em>
+     * of vertex {@code v}.
      * @param  v the vertex
      * @return the indegree of vertex {@code v}
+     * Time complexity is O(1).
      */
     public int indegree(final int v) {
         return indegree[v];
     }
-
+    /**
+     * Returns the number of directed edges
+     * out from vertex {@code v}.
+     * This is known as the <em>outdegree</em>
+     * of vertex {@code v}.
+     * @param  v the vertex
+     * @return the outdegree of vertex {@code v}
+     * Time complexity is O(1).
+     */
+    public int outdegree(final int v) {
+        return outdegree[v];
+    }
+    /**
+     * Returns a string representation of the graph.
+     *
+     * @return the number of vertices <em>V</em>,
+     * followed by the number of edges <em>E</em>,
+     * followed by the <em>V</em> adjacency lists
+     */
+    public String toString() {
+        StringBuilder s = new StringBuilder();
+        s.append(vertices + " vertices, " + edges + " edges " + NEWLINE);
+        for (int v = 0; v < vertices(); v++) {
+            s.append(String.format("%d: ", v));
+            for (int w : adj[v]) {
+                s.append(String.format("%d ", w));
+            }
+            s.append(NEWLINE);
+        }
+        return s.toString();
+    }
 }
