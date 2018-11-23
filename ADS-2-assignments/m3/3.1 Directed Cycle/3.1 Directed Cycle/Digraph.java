@@ -1,13 +1,30 @@
 import java.util.NoSuchElementException;
-
 public class Digraph {
+    /**
+     * variable.
+     */
     private static final String NEWLINE = System.getProperty("line.separator");
 
     private final int vert;           // number of vertices in this digraph
+    /**
+     * variable.
+     */
     private int edg;                 // number of edges in this digraph
+    /**
+     * variable.
+     */
     private Bag<Integer>[] adj;     // adj[v] = adjacency list for vertex v
+    /**
+     * variable.
+     */
     private int size = 0;
+    /**
+     * variable.
+     */
     private int[] indegree;        // indegree[v] = indegree of vertex v
+    /**
+     * variable.
+     */
 
     /**
      * Initializes an empty digraph with <em>V</em> vertices.
@@ -26,9 +43,21 @@ public class Digraph {
             adj[v] = new Bag<Integer>();
         }
     }
+    /**
+     * The Time complexity is O(1)
+     * @brief [brief description]
+     * @details [long description]
+     * @return value
+     */
     public int vert(){
         return vert;
     }
+    /**
+     * The Time complexity is O(1)
+     * @brief [brief description]
+     * @details [long description]
+     * @return value
+     */
     public int edg(){
         return edg;
     }
@@ -89,6 +118,12 @@ public class Digraph {
     // }
 
     // throw an IllegalArgumentException unless {@code 0 <= v < V}
+    /**
+     * vertices.
+     * The Time complexity is O(1).
+     * @return int [description]
+     *  @param v [description]
+     */
     private void validateVertex(int v) {
         if (v < 0 || v >= vert)
             throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (vert-1));
@@ -101,38 +136,38 @@ public class Digraph {
         }
         return false;
     }
-
     /**
-     * Adds the directed edge v→w to this digraph.
-     *
-     * @param  v the tail vertex
-     * @param  w the head vertex
-     * @throws IllegalArgumentException unless both {@code 0 <= v < V} and {@code 0 <= w < V}
+     * @brief [brief description]
+     * @details [long description]
+     * The Time complexity is O(1)
+     * @param v value
+     * @param w value
      */
-    public void addEdge(int v, int w) {
+    public void addEdge(final int v, final int w) {
         validateVertex(v);
         validateVertex(w);
         adj[v].add(w);
         indegree[w]++;
         edg++;
     }
-
     /**
-     * Returns the vertices adjacent from vertex {@code v} in this digraph.
-     *
+     * The Time complexity is O(N).
+     * Returns the vertices adjacent
+     * from vertex {@code v} in this digraph.
      * @param  v the vertex
-     * @return the vertices adjacent from vertex {@code v} in this digraph, as an iterable
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
+     * @return the vertices adjacent from vertex
+     * {@code v} in this digraph, as an iterable
+     * @throws IllegalArgumentException unless
+     * {@code 0 <= v < V}
      */
-    public Iterable<Integer> adj(int v) {
+    public Iterable<Integer> adj(final int v) {
         validateVertex(v);
         return adj[v];
     }
-
     /**
+     * The Time complexity is O(1).
      * Returns the number of directed edges incident from vertex {@code v}.
      * This is known as the <em>outdegree</em> of vertex {@code v}.
-     *
      * @param  v the vertex
      * @return the outdegree of vertex {@code v}
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
@@ -141,11 +176,10 @@ public class Digraph {
         validateVertex(v);
         return adj[v].size();
     }
-
     /**
+     * The Time complexity is O(1).
      * Returns the number of directed edges incident to vertex {@code v}.
      * This is known as the <em>indegree</em> of vertex {@code v}.
-     *
      * @param  v the vertex
      * @return the indegree of vertex {@code v}
      * @throws IllegalArgumentException unless {@code 0 <= v < V}

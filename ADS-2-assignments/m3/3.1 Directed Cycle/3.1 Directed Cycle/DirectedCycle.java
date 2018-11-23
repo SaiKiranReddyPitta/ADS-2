@@ -1,14 +1,26 @@
+/** has Cycle **/
 public class DirectedCycle {
-    private boolean[] marked;        // marked[v] = has vertex v been marked?
-    private int[] edgeTo;            // edgeTo[v] = previous vertex on path to v
-    private boolean[] onStack;       // onStack[v] = is vertex on the stack?
-    private Stack<Integer> cycle;    // directed cycle (or null if no such cycle)
-
     /**
-     * Determines whether the digraph
-     * {@code G} has a directed cycle and, if so,
-     * finds such a cycle.
-     * @param G the digraph
+     * variable.
+     */
+    private boolean[] marked;  
+    /**
+     * variable.
+     */
+    private int[] edgeTo;            // edgeTo[v] = previous vertex on path to v
+    /**
+     * variable.
+     */
+    private boolean[] onStack;       // onStack[v] = is vertex on the stack?
+    /**
+     * variable.
+     */
+    private Stack<Integer> cycle;    // directed cycle (or null if no such cycle)
+    /**
+     * variable.
+     */
+    /**
+     * @param graph value
      */
     public DirectedCycle(Digraph g) {
         marked  = new boolean[g.vert()];
@@ -20,6 +32,13 @@ public class DirectedCycle {
 
     // check that algorithm computes
     //either the topological order or finds a directed cycle
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     * Time complexity is E + V
+     * @param graph value
+     * @param v value
+     */
     private void dfs(Digraph g, int v) {
         onStack[v] = true;
         marked[v] = true;
@@ -47,22 +66,16 @@ public class DirectedCycle {
         }
         onStack[v] = false;
     }
-
     /**
-     * Does the digraph have a directed cycle?
-     * @return {@code true} if the digraph
-     * has a directed cycle, {@code false} otherwise
+     * @return value
+     * The Time complexity is O(1)
      */
     public boolean hasCycle() {
         return cycle != null;
     }
-
     /**
-     * Returns a directed cycle if the digraph has a
-     * directed cycle, and {@code null} otherwise.
-     * @return a directed cycle (as an iterable) if
-     * the digraph has a directed cycle,
-     *    and {@code null} otherwise
+     * @return value
+     * Time complexity is O(1)
      */
     public Iterable<Integer> cycle() {
         return cycle;

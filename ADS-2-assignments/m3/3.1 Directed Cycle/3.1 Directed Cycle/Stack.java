@@ -35,30 +35,27 @@ public class Stack<Item> implements Iterable<Item> {
         first = null;
         no = 0;
     }
-
    /**
-    * Determines if empty.
-    *
-    * @return     True if empty, False otherwise.
-    */
+     * Is the stack empty?
+     * The Time complexity is O(1)
+     * @return value
+     */
     public boolean isEmpty() {
         return first == null;
     }
-
    /**
-    * { function_description }.
-    *
-    * @return     { description_of_the_return_value }
-    */
+     * Return the number of items in the stack.
+     * The Time complexity is O(1)
+     * @return value
+     */
     public int size() {
         return no;
     }
-
    /**
-    * { function_description }.
-    *
-    * @param      item  The item
-    */
+     * Add the item to the stack.
+     * The Time complexity is O(1)
+     * @param item value
+     */
     public void push(final Item item) {
         Node oldfirst = first;
         first = new Node();
@@ -67,10 +64,9 @@ public class Stack<Item> implements Iterable<Item> {
         no++;
     }
    /**
-    * { function_description }.
-    *
-    * @return     { description_of_the_return_value }
-    */
+     * @return value
+     * The Time complexity is O(1)
+     */
     public Item pop() {
         if (isEmpty()) {
             throw new RuntimeException("Stack underflow");
@@ -80,25 +76,21 @@ public class Stack<Item> implements Iterable<Item> {
         no--;
         return item;                   // return the saved item
     }
-
-
    /**
-    * { function_description }.
-    *
-    * @return     { description_of_the_return_value }
-    */
+     * @return value
+     * The Time complexity is O(1)
+     */
     public Item peek() {
         if (isEmpty()) {
             throw new RuntimeException("Stack underflow");
         }
         return first.item;
     }
-
    /**
-    * Returns a string representation of the object.
-    *
-    * @return     String representation of the object.
-    */
+     * Return string representation.
+     * The Time complexity is O(N)
+     * @return value
+     */
     public String toString() {
         StringBuilder s = new StringBuilder();
         for (Item item : this) {
@@ -107,10 +99,9 @@ public class Stack<Item> implements Iterable<Item> {
         return s.toString();
     }
    /**
-    * .
-    *
-    * @return     { description_of_the_return_value }
-    */
+     * @return value
+     * The Time complexity is O(N)
+     */
     public Iterator<Item> iterator() {
         return new ListIterator();
     }
@@ -123,24 +114,24 @@ public class Stack<Item> implements Iterable<Item> {
          */
         private Node current = first;
         /**
-         * Determines if it has next.
-         *
-         * @return     True if has next, False otherwise.
+         * @return value
+         * The Time complexity is O(1)
          */
         public boolean hasNext() {
             return current != null;
         }
-        /**
-         * { function_description }.
-         */
+            /**
+             * @brief [brief description]
+             * @details [long description]
+             * Time complexity is O(1)
+             */
         public void remove() {
             throw new UnsupportedOperationException();
         }
-        /**
-         * { function_description }.
-         *
-         * @return     { description_of_the_return_value }
-         */
+            /**
+             * @return value
+             * Time complexity is O(1)
+             */
         public Item next() {
             if (!hasNext()) {
                 throw new NoSuchElementException();
