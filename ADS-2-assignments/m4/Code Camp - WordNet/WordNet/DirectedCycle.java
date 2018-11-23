@@ -1,7 +1,7 @@
 /**
  * Class for directed cycle.
  */
-class DirectedCycle {
+public class DirectedCycle {
     /**
      * marked[v] = has vertex v been marked?.
      */
@@ -84,5 +84,6 @@ class DirectedCycle {
         return cycle;
     }
 }
+
 
 
