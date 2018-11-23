@@ -11,7 +11,18 @@ final class Solution {
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    private Solution() {
+        /**.
+         * { item_description }
+         */
+    }
+    // The Time complexity for the main method is O(N).
+    /**.
+     * { function_description }
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         int vertex = Integer.parseInt(sc.nextLine());
         Graph graph = new Graph(vertex);

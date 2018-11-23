@@ -44,15 +44,27 @@
  *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
  */
 public class Graph {
+    /**
+     * variable.
+     */
     private final int V;
+    /**
+     * variable.
+     */
     private int E;
+    /**
+     * variable.
+     */
     private Bag<Integer>[] adj;
-    
+    /**
+     * variable.
+     */    
    /**
      * Create an empty graph with V vertices.
      */
-    public Graph(int V) {
-        if (V < 0) throw new RuntimeException("Number of vertices must be nonnegative");
+    public Graph(final int V) {
+        if (V < 0) throw new RuntimeException(
+            "Number of vertices must be nonnegative");
         this.V = V;
         this.E = 0;
         adj = (Bag<Integer>[]) new Bag[V];
@@ -105,38 +117,46 @@ public class Graph {
             }
         }
     }*/
-
-   /**
-     * Return the number of vertices in the graph.
+    /**
+     * The Time complexity is O(1)
+     * @brief [brief description]
+     * @details [long description]
+     * @return value
      */
     public int V() { return V; }
-
-   /**
-     * Return the number of edges in the graph.
+    /**
+     * The Time complexity is O(1)
+     * @brief [brief description]
+     * @details [long description]
+     * @return value
      */
-    public int E() { return E; }
-
-
-   /**
-     * Add the edge v-w to graph.
+    public int E() { 
+        return E;
+    }
+    /**
+     * The Time complexity is O(1)
+     * @brief [brief description]
+     * @details [long description]
+     * @param v value
+     * @param w value
      */
-    public void addEdge(int v, int w) {
+    public void addEdge(final int v, final int w) {
         E++;
         adj[v].add(w);
         adj[w].add(v);
     }
-
-
-   /**
-     * Return the list of neighbors of vertex v as in Iterable.
+    /**
+     * @param v value
+     * @return value
      */
-    public Iterable<Integer> adj(int v) {
+    public Iterable<Integer> adj(final int v) {
         return adj[v];
     }
-
-
-   /**
-     * Return a string representation of the graph.
+    /**
+     * The Time complexity is O(N ^ 2)
+     * @brief [brief description]
+     * @details [long description]
+     * @return value
      */
     public String toString() {
         StringBuilder s = new StringBuilder();

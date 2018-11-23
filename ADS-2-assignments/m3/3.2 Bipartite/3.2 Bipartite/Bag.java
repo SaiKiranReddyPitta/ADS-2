@@ -21,15 +21,31 @@ import java.util.NoSuchElementException;
  *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
  */
 public class Bag<Item> implements Iterable<Item> {
+    /**.
+     * { var_description }
+     */
     private int N;         // number of elements in bag
+    /**.
+     * { var_description }
+     */
     private Node first;    // beginning of bag
-
     // helper linked list class
+    /**.
+     * Class for node.
+     */
     private class Node {
+    /**.
+     * Class for node.
+     */
         private Item item;
+        /**.
+         * Class for node.
+         */
         private Node next;
+        /**.
+         * Class for node.
+         */
     }
-
    /**
      * Create an empty stack.
      */
@@ -37,24 +53,27 @@ public class Bag<Item> implements Iterable<Item> {
         first = null;
         N = 0;
     }
-
-   /**
-     * Is the BAG empty?
-     */
+/**.
+ * Determines if empty.
+ * @return     True if empty, False otherwise.
+ * The Time complexity is O(1)
+ */
     public boolean isEmpty() {
         return first == null;
     }
-
-   /**
-     * Return the number of items in the bag.
-     */
+/**.
+ * { function_description }
+ * @return     { description_of_the_return_value }
+ * The Time complexity is O(1)
+ */
     public int size() {
         return N;
     }
-
-   /**
-     * Add the item to the bag.
-     */
+/**.
+ * { function_description }
+ * @param      item  The item
+ * The Time complexity is O(1)
+ */
     public void add(Item item) {
         Node oldfirst = first;
         first = new Node();
@@ -62,22 +81,38 @@ public class Bag<Item> implements Iterable<Item> {
         first.next = oldfirst;
         N++;
     }
-
-
-   /**
-     * Return an iterator that iterates over the items in the bag.
-     */
+/**.
+ * { function_description }
+ * @return     { description_of_the_return_value }
+ * The Time complexity is O(N)
+ */
     public Iterator<Item> iterator()  {
         return new ListIterator();  
     }
 
     // an iterator, doesn't implement remove() since it's optional
     private class ListIterator implements Iterator<Item> {
+        /**.
+         * { var_description }
+         */
         private Node current = first;
-
+        /**.
+         * Determines if it has next.
+         *
+         * @return     True if has next, False otherwise.
+         * The Time complexity is O(1)
+         */
         public boolean hasNext()  { return current != null;                     }
+        /**.
+         * { function_description }
+         * The Time complexity is O(1)
+         */
         public void remove()      { throw new UnsupportedOperationException();  }
-
+        /**.
+         * { function_description }
+         * @return     { description_of_the_return_value }
+         * The Time complexity is O(1)
+         */
         public Item next() {
             if (!hasNext()) throw new NoSuchElementException();
             Item item = current.item;
