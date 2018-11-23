@@ -58,7 +58,7 @@ public class Stack<Item> implements Iterable<Item> {
     }
     /**.
      * { function_description }
-     * time complexity in average case is 1.
+     * The Time complexity in average case is 1.
      * @param      item  The item
      */
     public void push(final Item item) {
@@ -70,7 +70,7 @@ public class Stack<Item> implements Iterable<Item> {
     }
     /**.
      * { function_description }
-     * time complexity in average case is 1.
+     * The Time complexity in average case is 1.
      * @return     { description_of_the_return_value }
      */
     public Item pop() {
@@ -84,7 +84,7 @@ public class Stack<Item> implements Iterable<Item> {
     }
     /**.
      * { function_description }
-     * time complexity in average case is 1.
+     * The Time complexity in average case is 1.
      * @return     { description_of_the_return_value }
      */
     public Item peek() {
@@ -95,7 +95,7 @@ public class Stack<Item> implements Iterable<Item> {
     }
     /**.
      * Returns a string representation of the object.
-     * time complexity is O(N).
+     * The Time complexity is O(N).
      * @return     String representation of the object.
      */
     public String toString() {
@@ -107,7 +107,7 @@ public class Stack<Item> implements Iterable<Item> {
     }
     /**.
      * { function_description }
-     * time complexity in average case is 1.
+     * The Time complexity in average case is 1.
      * @return     { description_of_the_return_value }
      */
     public Iterator<Item> iterator() {
@@ -123,14 +123,14 @@ public class Stack<Item> implements Iterable<Item> {
         private Node current = first;
         /**.
          * Determines if it has next.
-         * time complexity in average case is 1.
+         * The Time complexity in average case is 1.
          * @return     True if has next, False otherwise.
          */
         public boolean hasNext() {
             return current != null;
         }
         /**.
-         * time complexity in average case is 1.
+         * The Time complexity in average case is 1.
          * { function_description }
          */
         public void remove() {
@@ -138,7 +138,7 @@ public class Stack<Item> implements Iterable<Item> {
         }
         /**.
          * { function_description }
-         * time complexity in average case is 1.
+         * The Time complexity in average case is 1.
          * @return     { description_of_the_return_value }
          */
         public Item next() {

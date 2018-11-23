@@ -41,7 +41,7 @@ public class Digraph {
 
     /**
      * Returns the number of vertices in this graph.
-     * time complexity is 1 in avg case
+     * The Time complexity is 1 in avg case
      * @return the number of vertices in this graph
      */
     public int vert() {
@@ -50,7 +50,7 @@ public class Digraph {
 
     /**
      * Returns the number of edges in this graph.
-     * time complexity is 1 in avg case
+     * The Time complexity is 1 in avg case
      * @return the number of edges in this graph
      */
     public int edge() {
@@ -58,7 +58,7 @@ public class Digraph {
     }
     // /**.
     //  * Adds a vertex.
-    //  * time complexity is 1
+    //  * The Time complexity is 1
     //  * @param      v     { parameter_description }
     //  */
     // public void addVertex(final String v) {
@@ -67,7 +67,7 @@ public class Digraph {
     // }
     /**.
      * Determines if it has edge.
-     * time complexity is O(N).
+     * The Time complexity is O(N).
      * @param      v     { parameter_description }
      * @param      w     { parameter_description }
      *
@@ -83,7 +83,7 @@ public class Digraph {
     }
     /**
      * Adds the undirected edge v-w to this graph.
-     * time complexity is 1 in avg case
+     * The Time complexity is 1 in avg case
      * @param  v one vertex in the edge
      * @param  w the other vertex in the edge
      */
@@ -95,7 +95,7 @@ public class Digraph {
     }
     /**
      * Returns the vertices adjacent to vertex {@code v}.
-     * time complexity is 1 in avg case
+     * The Time complexity is 1 in avg case
      * @param  v the vertex
      * @return the vertices adjacent to vertex {@code v}, as an iterable
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
@@ -106,7 +106,7 @@ public class Digraph {
 
     /**
      * Returns the degree of vertex {@code v}.
-     * time complexity in average case is 1.
+     * The Time complexity in average case is 1.
      * @param  v the vertex
      * @return the degree of vertex {@code v}
      */
@@ -115,7 +115,7 @@ public class Digraph {
     }
 
     /**
-     * time complexity in average case is 1.
+     * The Time complexity in average case is 1.
      *
      * @param  v the vertex
      * @return the indegree of vertex {@code v}
