@@ -64,7 +64,7 @@ public class Stack<Item> implements Iterable<Item> {
         num++;
     }
 
-   /**
+   /**.
      * The Time complexity is O(1)
      * @return value
      */
@@ -79,7 +79,7 @@ public class Stack<Item> implements Iterable<Item> {
     }
 
 
-   /**
+   /**.
      * The Time complexity is O(1)
      * @return value
      */
@@ -104,7 +104,7 @@ public class Stack<Item> implements Iterable<Item> {
     }
 
 
-   /**
+   /**.
      * The Time complexity is O(N)
      * @return value
      */
@@ -118,14 +118,14 @@ public class Stack<Item> implements Iterable<Item> {
          * variable.
          */
         private Node current = first;
-        /**
+        /**.
          * The Time complexity is O(1)
          * @return value
          */
         public boolean hasNext() {
             return current != null;
              }
-             /**
+             /**.
               * The Time complexity is O(1)
               * @brief [brief description]
               * @details [long description]
@@ -133,7 +133,7 @@ public class Stack<Item> implements Iterable<Item> {
         public void remove() {
         throw new UnsupportedOperationException();
              }
-            /**
+            /**.
              * The Time complexity is O(1)
              * @return value
              */
@@ -161,4 +161,8 @@ public class Stack<Item> implements Iterable<Item> {
         StdOut.println("(" + s.size() + " left on stack)");
     }*/
 }
+
+
+
+
 

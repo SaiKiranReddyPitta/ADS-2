@@ -1,9 +1,5 @@
 Starting audit...
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Bag.java:91: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Bag.java:100: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Bag.java:108: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 3 errors.
 Starting audit...
 Audit done.
 Starting audit...
@@ -11,12 +7,4 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:67: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:82: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:107: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:121: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:128: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\Sai Kiran\Desktop\MSIT\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:136: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 7 errors.

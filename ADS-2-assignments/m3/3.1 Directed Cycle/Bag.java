@@ -88,7 +88,7 @@ public class Bag<Item> implements Iterable<Item> {
      * variable.
      */
         private Node current = first;
-        /**
+        /**.
          * The Time complexity is O(1)
          * @brief [brief description]
          * @details [long description]
@@ -97,7 +97,7 @@ public class Bag<Item> implements Iterable<Item> {
         public boolean hasNext()  {
             return current != null;
         }
-        /**
+        /**.
          * The Time complexity is O(1)
          * @brief [brief description]
          * @details [long description]
@@ -105,7 +105,7 @@ public class Bag<Item> implements Iterable<Item> {
         public void remove()      {
             throw new UnsupportedOperationException();
          }
-         /**
+         /**.
           * The ime complexity is O(1)
           * @brief [brief description]
           * @details [long description]
