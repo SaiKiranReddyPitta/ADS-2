@@ -1,44 +1,63 @@
 import java.util.ArrayList;
 import edu.princeton.cs.algs4.BinaryStdIn;
 import edu.princeton.cs.algs4.BinaryStdOut;
+/**
+ * Class for move to front.
+ */
 public class MoveToFront {
-    private static int R = 256;
+    /**
+     * { function_description }
+     * Complexity: O(N+256), N is length of string s and 256 is total ASCII count
+     */
     public static void encode() {
         ArrayList<Character> list = new ArrayList<Character>();
-        for (char i = 0 ; i < R; i++) {
-                list.add(i);
-            }
-        while (!BinaryStdIn.isEmpty()) {
-            char ch = BinaryStdIn.readChar();
-            int index = (int) list.indexOf(ch);
-            BinaryStdOut.write((char) index);
-            list.remove(index);
+        for (int i = 0; i < 256; i++) {
+            list.add((char) i);
+        }
+        String s = BinaryStdIn.readString();
+
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            int ch = list.indexOf(c);
+            BinaryStdOut.write((char) ch);
+            list.remove(ch);
+            list.add(0, c);
+        }
+        BinaryStdOut.close();
+    }
+    /**
+     * { function_description }
+     *  Complexity: O(N+256), N is length of string s and 256 is total ASCII count
+     */
+    public static void decode() {
+        ArrayList<Character> list = new ArrayList<Character>();
+        for (int i = 0; i < 256; i++) {
+            list.add((char)i);
+        }
+        String s = BinaryStdIn.readString();
+
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            char ch = list.get(c);
+            BinaryStdOut.write(ch);
+            list.remove(c);
             list.add(0, ch);
         }
         BinaryStdOut.close();
+
     }
 
-    public static void decode() {
-        ArrayList<Character> list = new ArrayList<Character>();
-        for (char i = 0 ; i < R; i++) {
-            list.add(i);
-        }
-        while (!BinaryStdIn.isEmpty()) {
-            char ch = BinaryStdIn.readChar();
-            char index = list.get(ch);
-            BinaryStdOut.write(index);
-            list.remove(ch);
-            list.add(0, index);
-        }
-        BinaryStdOut.close();
-    }
+    /**
+     * { function_description }
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
 
-    public static void main(String[] args) {
-        String first = args[0];
-        if (first.equals("+")) {
-            decode();
-        } else {
+        if (args[0].equals("-")) {
             encode();
+        } else if (args[0].equals("-"))  {
+            decode();
         }
     }
 }
